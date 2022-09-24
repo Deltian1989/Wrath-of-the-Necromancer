@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16018c2b7bbc3a4cac204a361f62394, type: 3}
+  m_Name: Alma_DialogueSet
+  m_EditorClassIdentifier: 
+  dialogueOptions:
+  - DialogueOptionText: Introduction
+    Talk: Hello. I am Alma and I am wife of the mayor of this town, Henry. You must
+      look like a brave and good person, such people like you are always really welcome.
+      If you get into any of troubles or need any advice from us, please always come
+      to us, we are always really pleased to tell good ways to people who want to
+      fight with us against our enemies.
+  - DialogueOptionText: Gossip
+    Talk: People living here in this town are always really nice to strange people
+      asking for staying here the night or looking for help in their lives. The tavern
+      'Under the Wild Boar' in this town is the great place for them to meet guest
+      guys and even make new friends.

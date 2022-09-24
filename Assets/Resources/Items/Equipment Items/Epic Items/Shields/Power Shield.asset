@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2e3e622deb70d47b2b530aedbdb2ab, type: 3}
+  m_Name: Power Shield
+  m_EditorClassIdentifier: 
+  ID: 11
+  itemName: Power Shield
+  image: {fileID: 21300000, guid: 822bd3a8587eb024f87598c53d7dec6c, type: 3}
+  useSFX: {fileID: 8300000, guid: 58b07cb7203abb64ab53c9586c78d804, type: 3}
+  stackSize: 1
+  equipmentSlot: 5
+  weaponModel: {fileID: 311391645012464389, guid: 4103e438681aa0a449cc7b887dbf9b43, type: 3}
+  requiredLevel: 0
+  requiredStrength: 0
+  requiredDexterity: 0
+  requiredMagic: 0
+  shieldDefense: 20
+  magicDefense: 10
+  blockChance: 0.5

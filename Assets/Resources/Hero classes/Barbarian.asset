@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc0817e86651e448a12cb2d1e5e4e4c, type: 3}
+  m_Name: Barbarian
+  m_EditorClassIdentifier: 
+  ID: 4
+  className: Barbarian
+  heroClassDescription: Barbarian is good in the sword, mace and battle skills
+  heroPortrait: {fileID: 2800000, guid: 7312a8bb63e7e4b45b4627e42bbfef83, type: 3}
+  heroSillhoute: {fileID: 2800000, guid: 068a0f5b7f8ae9c42b6373e76c82a7df, type: 3}
+  strength: 40
+  dexterity: 30
+  magic: 20
+  vitality: 30
+  energy: 20
+  damage: 60
+  defense: 50
+  magicPower: 20
+  magicResist: 20
+  HP: 50
+  MP: 30
+  stamina: 100
+  startGold: 100
+  equippedItemsAtStart:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 70a5c0c3371e20740ab4fc80cfa09298, type: 2}
+  - {fileID: 11400000, guid: b8f0b75be7a01584f965fbd65b78a455, type: 2}
+  inventoryItemsAtStart:
+  - item: {fileID: 11400000, guid: 83976b75cb04bf043b1588975d5f7591, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: b03aa37b54b300d4aa5b15616652b678, type: 2}
+    count: 2
+  - item: {fileID: 11400000, guid: d0319bd91ec3bbe46aefc96d1631e09a, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: bee4ba220073c4b47b812ed7561a5545, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 1c1b5c95acd85e844915923bebfdb558, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 9f7f3c95a9c62174a8d0404f4da897a0, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 91f7ff86407623b43b382ce733cc839e, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 40b41af6be9dc6948b052514fe6f744e, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 1fc11ae3976b32041aaba1dfb5d90458, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 56c8ceff8412f73498f77978da89af08, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 7ada03690782c814da08c53f93e68656, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 188f326c9bbde774db0952cebe14b8b1, type: 2}
+    count: 1
+  characterPrefab: {fileID: 8819662137743757083, guid: 02d240f5a0506234e9a322dd8b1bca5c, type: 3}

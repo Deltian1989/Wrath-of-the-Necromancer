@@ -1,0 +1,34 @@
+{
+    "name": "PlayerHUDControls",
+    "maps": [
+        {
+            "name": "HUD",
+            "id": "d707c7f9-020f-4974-b01e-34589c953a33",
+            "actions": [
+                {
+                    "name": "PauseGame",
+                    "type": "Button",
+                    "id": "dbd805cb-e31b-4d36-a299-1ffd2044fc6d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "dfd1ede0-fc67-493a-8385-b3df5307a2bd",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PauseGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

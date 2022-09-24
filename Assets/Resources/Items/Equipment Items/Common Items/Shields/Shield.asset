@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2e3e622deb70d47b2b530aedbdb2ab, type: 3}
+  m_Name: Shield
+  m_EditorClassIdentifier: 
+  ID: 5
+  itemName: Shield
+  image: {fileID: 21300000, guid: b97c91e8b348f3f4ebdc11f5c82182cd, type: 3}
+  useSFX: {fileID: 8300000, guid: 307c23f098c5c784ea06471ea2488631, type: 3}
+  stackSize: 1
+  equipmentSlot: 5
+  weaponModel: {fileID: 1918361816753848, guid: 12b4a98800f25b34690403f46e663c5f, type: 3}
+  requiredLevel: 0
+  requiredStrength: 0
+  requiredDexterity: 0
+  requiredMagic: 0
+  shieldDefense: 5
+  magicDefense: 0
+  blockChance: 0.3

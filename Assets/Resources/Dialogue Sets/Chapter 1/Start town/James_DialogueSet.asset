@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16018c2b7bbc3a4cac204a361f62394, type: 3}
+  m_Name: James_DialogueSet
+  m_EditorClassIdentifier: 
+  dialogueOptions:
+  - DialogueOptionText: Introduction
+    Talk: Hello, stranger. I am James and I am blacksmith. If you need some weapons
+      or armor to buy or repair, feel free always to come to me.
+  - DialogueOptionText: Gossip
+    Talk: I am not good in socketing of weapons and armors, but if you find something
+      that will help me out, I'll appreciate a lot.

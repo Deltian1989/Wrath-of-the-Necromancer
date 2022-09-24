@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec1c60bc4259ccc40bb771e79e7f2b51, type: 3}
+  m_Name: Plate_Boots
+  m_EditorClassIdentifier: 
+  ID: 1
+  itemName: Plate Boots
+  image: {fileID: 21300000, guid: 9e6747071d120674e9a3846616608582, type: 3}
+  useSFX: {fileID: 8300000, guid: 61721f851cc141740a2ab00c66d91dfb, type: 3}
+  stackSize: 1
+  equipmentSlot: 3
+  meshName: CommonPlateBoots
+  armor: 4
+  magicResist: 2
+  requiredLevel: 0
+  requiredDexterity: 3
+  requiredMagic: 0

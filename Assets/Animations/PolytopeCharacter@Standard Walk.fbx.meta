@@ -1,0 +1,1205 @@
+fileFormatVersion: 2
+guid: 42190f68d942cb14d9ed96fc129debe9
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -203655887218126122
+    second: Standard Walk
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Standard Walk
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: PT_Medieval_Male_Armor_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_Spine2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftToe
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightToe
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PT_Medieval_Male_Armor_Spine3
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: PolytopeCharacter(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: PolytopeCharacter(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_Hips
+      parentName: Armature
+      position: {x: -0, y: 1.0312524, z: 0.01863602}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_Spine
+      parentName: PT_Medieval_Male_Armor_Hips
+      position: {x: -0, y: 0.083521955, z: -0.0072031184}
+      rotation: {x: -0.05455323, y: 0, z: -0, w: 0.9985109}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_Spine2
+      parentName: PT_Medieval_Male_Armor_Spine
+      position: {x: -0, y: 0.11773588, z: -0.0030966874}
+      rotation: {x: 0.000000018626453, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_Spine3
+      parentName: PT_Medieval_Male_Armor_Spine2
+      position: {x: -0, y: 0.091902256, z: -0.012949106}
+      rotation: {x: -0.000000029802322, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_Long_Bow_slot
+      parentName: PT_Medieval_Male_Armor_Spine3
+      position: {x: -0.09740666, y: -0.032407332, z: -0.15668702}
+      rotation: {x: 0.2194513, y: 0.8995495, z: 0.10542869, w: -0.3626798}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_Medium_Bow_slot
+      parentName: PT_Medieval_Male_Armor_Spine3
+      position: {x: -0.06086113, y: -0.023988008, z: -0.16310364}
+      rotation: {x: 0.41191608, y: -0.07447684, z: 0.8751432, w: 0.24269898}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: PT_Medieval_Male_Armor_Quiver_slot
+      parentName: PT_Medieval_Male_Armor_Spine3
+      position: {x: 0.06985389, y: -0.007842512, z: -0.17465213}
+      rotation: {x: 0.0039486187, y: 0.00032025078, z: -0.2761965, w: 0.961093}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.99999976}
+    - name: PT_Medieval_Male_Armor_LeftShoulder
+      parentName: PT_Medieval_Male_Armor_Spine3
+      position: {x: -0.065679304, y: 0.06552817, z: -0.0067431545}
+      rotation: {x: 0.554835, y: -0.4344662, z: 0.57201284, w: 0.41976008}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftArm
+      parentName: PT_Medieval_Male_Armor_LeftShoulder
+      position: {x: 0.0030670553, y: 0.11715886, z: -0.027578779}
+      rotation: {x: -0.037783355, y: -0.00013934086, z: 0.0036822564, w: 0.99927914}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftForeArm
+      parentName: PT_Medieval_Male_Armor_LeftArm
+      position: {x: -0.0016889536, y: 0.2694026, z: -0.037289202}
+      rotation: {x: -0.11947747, y: 0.004353025, z: -0.036147397, w: 0.99216914}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999998}
+    - name: PT_Medieval_Male_Armor_Medium_Shield_slot
+      parentName: PT_Medieval_Male_Armor_LeftForeArm
+      position: {x: 0.0007627106, y: 0.35668075, z: -0.003686359}
+      rotation: {x: 0.70922774, y: 0.69002026, z: 0.14373246, w: 0.0144615155}
+      scale: {x: 0.9999998, y: 0.9999999, z: 0.9999999}
+    - name: PT_Medieval_Male_Armor_Small_Shield_slot
+      parentName: PT_Medieval_Male_Armor_LeftForeArm
+      position: {x: -0.008307495, y: 0.3459767, z: 0.0029397989}
+      rotation: {x: 0.71049273, y: 0.6963925, z: 0.07626648, w: -0.06649091}
+      scale: {x: 0.99999976, y: 0.9999999, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_Large_Shield_slot
+      parentName: PT_Medieval_Male_Armor_LeftForeArm
+      position: {x: -0.0013079643, y: 0.38614142, z: 0.0067237136}
+      rotation: {x: 0.65759254, y: 0.6769273, z: 0.29793763, w: -0.14343865}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_LeftHand
+      parentName: PT_Medieval_Male_Armor_LeftForeArm
+      position: {x: 0.005954151, y: 0.2618943, z: 0.012948544}
+      rotation: {x: 0.023698527, y: 0.023615997, z: 0.047987875, w: 0.9982875}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: PT_Medieval_Male_Armor_Left_Hand_Weapon_slot
+      parentName: PT_Medieval_Male_Armor_LeftHand
+      position: {x: 0.027045473, y: 0.09489594, z: 0.025703289}
+      rotation: {x: -0.48336536, y: 0.40317532, z: 0.5769728, w: 0.52049017}
+      scale: {x: 0.9999998, y: 0.9999999, z: 0.9999999}
+    - name: PT_Medieval_Male_Armor_LeftHandThumb1
+      parentName: PT_Medieval_Male_Armor_LeftHand
+      position: {x: 0.039641973, y: 0.032029282, z: 0.01762393}
+      rotation: {x: 0.058125228, y: 0.013853372, z: -0.3133485, w: 0.9477564}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_LeftHandThumb2
+      parentName: PT_Medieval_Male_Armor_LeftHandThumb1
+      position: {x: 0.009661498, y: 0.06264965, z: 0.008649387}
+      rotation: {x: 0.06440606, y: 0.014390547, z: -0.18679115, w: 0.98018056}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftHandThumb3
+      parentName: PT_Medieval_Male_Armor_LeftHandThumb2
+      position: {x: -0.011318135, y: 0.038020723, z: -0.00014045835}
+      rotation: {x: -0.018469732, y: 0.008029031, z: 0.11230379, w: 0.99346983}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftHandThumb3_end
+      parentName: PT_Medieval_Male_Armor_LeftHandThumb3
+      position: {x: -0, y: 0.03966964, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftHandIndex1
+      parentName: PT_Medieval_Male_Armor_LeftHand
+      position: {x: 0.033899177, y: 0.092781164, z: -0.005699891}
+      rotation: {x: 0.055548843, y: -0.0029377288, z: -0.052730683, w: 0.9970583}
+      scale: {x: 1, y: 0.99999994, z: 1.0000002}
+    - name: PT_Medieval_Male_Armor_LeftHandIndex2
+      parentName: PT_Medieval_Male_Armor_LeftHandIndex1
+      position: {x: 0.0009678823, y: 0.042752303, z: -0.0010527275}
+      rotation: {x: -0.025351813, y: 0.000034774414, z: -0.022477128, w: 0.9994259}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftHandIndex3
+      parentName: PT_Medieval_Male_Armor_LeftHandIndex2
+      position: {x: -0.0013015803, y: 0.036721893, z: 0.0035456878}
+      rotation: {x: 0.08534333, y: -0.0019844754, z: 0.011929695, w: 0.9962783}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftHandIndex3_end
+      parentName: PT_Medieval_Male_Armor_LeftHandIndex3
+      position: {x: -0, y: 0.036915563, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftHandMiddle1
+      parentName: PT_Medieval_Male_Armor_LeftHand
+      position: {x: 0.006663866, y: 0.1055458, z: -0.006479403}
+      rotation: {x: 0.061577015, y: -0.0046817563, z: -0.066894256, w: 0.99584717}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_LeftHandMiddle2
+      parentName: PT_Medieval_Male_Armor_LeftHandMiddle1
+      position: {x: -0.0010687399, y: 0.043067914, z: -0.0011194354}
+      rotation: {x: -0.07763559, y: -0.007588449, z: -0.01826657, w: 0.99678564}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: PT_Medieval_Male_Armor_LeftHandMiddle3
+      parentName: PT_Medieval_Male_Armor_LeftHandMiddle2
+      position: {x: -0.0023735475, y: 0.035503145, z: 0.006976286}
+      rotation: {x: 0.06272147, y: -0.00049850275, z: 0.010890251, w: 0.9979716}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: PT_Medieval_Male_Armor_LeftHandMiddle3_end
+      parentName: PT_Medieval_Male_Armor_LeftHandMiddle3
+      position: {x: -0, y: 0.03625977, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftHandRing1
+      parentName: PT_Medieval_Male_Armor_LeftHand
+      position: {x: -0.020498823, y: 0.10116956, z: -0.009757123}
+      rotation: {x: 0.070378676, y: -0.011327084, z: -0.08078155, w: 0.99417955}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999997}
+    - name: PT_Medieval_Male_Armor_LeftHandRing2
+      parentName: PT_Medieval_Male_Armor_LeftHandRing1
+      position: {x: -0.0044584465, y: 0.04005802, z: -0.0016474229}
+      rotation: {x: -0.024642074, y: -0.0075135613, z: 0.005860536, w: 0.99965096}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: PT_Medieval_Male_Armor_LeftHandRing3
+      parentName: PT_Medieval_Male_Armor_LeftHandRing2
+      position: {x: -0.0034183834, y: 0.036755733, z: 0.0031683014}
+      rotation: {x: 0.041433524, y: -0.00020215377, z: 0.0048986473, w: 0.9991293}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999999}
+    - name: PT_Medieval_Male_Armor_LeftHandRing3_end
+      parentName: PT_Medieval_Male_Armor_LeftHandRing3
+      position: {x: -0, y: 0.037049994, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftHandPinky1
+      parentName: PT_Medieval_Male_Armor_LeftHand
+      position: {x: -0.042899657, y: 0.094950445, z: -0.0031276008}
+      rotation: {x: 0.20583431, y: 0.007591559, z: 0.036066495, w: 0.9778925}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_LeftHandPinky2
+      parentName: PT_Medieval_Male_Armor_LeftHandPinky1
+      position: {x: 0.0007499313, y: 0.028182635, z: -0.010203755}
+      rotation: {x: -0.09345195, y: 0.0013519978, z: 0.004190416, w: 0.99561405}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: PT_Medieval_Male_Armor_LeftHandPinky3
+      parentName: PT_Medieval_Male_Armor_LeftHandPinky2
+      position: {x: 0.0017718791, y: 0.024944343, z: -0.002165849}
+      rotation: {x: -0.015659472, y: -0.000053662916, z: -0.004673332, w: 0.9998665}
+      scale: {x: 0.9999998, y: 0.9999999, z: 0.99999976}
+    - name: PT_Medieval_Male_Armor_LeftHandPinky3_end
+      parentName: PT_Medieval_Male_Armor_LeftHandPinky3
+      position: {x: -0, y: 0.02510088, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightShoulder
+      parentName: PT_Medieval_Male_Armor_Spine3
+      position: {x: 0.065679304, y: 0.06552817, z: -0.0067431545}
+      rotation: {x: -0.4197592, y: 0.5720136, z: 0.4344652, w: 0.5548357}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: PT_Medieval_Male_Armor_RightArm
+      parentName: PT_Medieval_Male_Armor_RightShoulder
+      position: {x: -0.0030670518, y: -0.117158934, z: 0.027578615}
+      rotation: {x: -0.03778311, y: -0.00013938281, z: 0.0036822588, w: 0.9992792}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: PT_Medieval_Male_Armor_RightForeArm
+      parentName: PT_Medieval_Male_Armor_RightArm
+      position: {x: 0.0016893661, y: -0.2694032, z: 0.037285224}
+      rotation: {x: -0.119477704, y: 0.0043529077, z: -0.036147423, w: 0.9921691}
+      scale: {x: 0.9999999, y: 1, z: 0.9999998}
+    - name: PT_Medieval_Male_Armor_RightHand
+      parentName: PT_Medieval_Male_Armor_RightForeArm
+      position: {x: -0.00595469, y: -0.26189446, z: -0.012944337}
+      rotation: {x: 0.023698535, y: 0.023616038, z: 0.047987882, w: 0.9982875}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_Right_Hand_Weapon_slot
+      parentName: PT_Medieval_Male_Armor_RightHand
+      position: {x: -0.019349609, y: -0.099109836, z: -0.023399442}
+      rotation: {x: 0.65023524, y: 0.72492534, z: -0.18280227, w: 0.13513239}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_RightHandThumb1
+      parentName: PT_Medieval_Male_Armor_RightHand
+      position: {x: -0.039641954, y: -0.032029204, z: -0.017623985}
+      rotation: {x: 0.058069527, y: 0.01388492, z: -0.3133638, w: 0.9477543}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: PT_Medieval_Male_Armor_RightHandThumb2
+      parentName: PT_Medieval_Male_Armor_RightHandThumb1
+      position: {x: -0.009661403, y: -0.06264977, z: -0.008649358}
+      rotation: {x: 0.064406194, y: 0.014390331, z: -0.18679091, w: 0.9801806}
+      scale: {x: 1.0000002, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightHandThumb3
+      parentName: PT_Medieval_Male_Armor_RightHandThumb2
+      position: {x: 0.011318073, y: -0.038020745, z: 0.00014057755}
+      rotation: {x: -0.42701456, y: -0.06382379, z: -0.89267755, w: 0.12927446}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightHandThumb3_end
+      parentName: PT_Medieval_Male_Armor_RightHandThumb3
+      position: {x: -0, y: 0.03966964, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightHandIndex1
+      parentName: PT_Medieval_Male_Armor_RightHand
+      position: {x: -0.033899162, y: -0.09278101, z: 0.0056998287}
+      rotation: {x: 0.05554885, y: -0.002937799, z: -0.052730717, w: 0.9970583}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000002}
+    - name: PT_Medieval_Male_Armor_RightHandIndex2
+      parentName: PT_Medieval_Male_Armor_RightHandIndex1
+      position: {x: -0.0009678948, y: -0.0427524, z: 0.0010529642}
+      rotation: {x: -0.025359515, y: 0.000034987916, z: -0.022477882, w: 0.99942565}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightHandIndex3
+      parentName: PT_Medieval_Male_Armor_RightHandIndex2
+      position: {x: 0.0013015702, y: -0.036721736, z: -0.0035458778}
+      rotation: {x: 0.98770154, y: 0.024572238, z: -0.14772056, w: -0.04495124}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: PT_Medieval_Male_Armor_RightHandIndex3_end
+      parentName: PT_Medieval_Male_Armor_RightHandIndex3
+      position: {x: -0, y: 0.036915563, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightHandMiddle1
+      parentName: PT_Medieval_Male_Armor_RightHand
+      position: {x: -0.006663854, y: -0.10554563, z: 0.0064793383}
+      rotation: {x: 0.061576046, y: -0.004681721, z: -0.06689395, w: 0.9958472}
+      scale: {x: 1, y: 0.9999998, z: 1}
+    - name: PT_Medieval_Male_Armor_RightHandMiddle2
+      parentName: PT_Medieval_Male_Armor_RightHandMiddle1
+      position: {x: 0.0010687041, y: -0.043067925, z: 0.0011194092}
+      rotation: {x: -0.07763344, y: -0.007588219, z: -0.018266296, w: 0.9967858}
+      scale: {x: 1, y: 0.99999976, z: 0.9999999}
+    - name: PT_Medieval_Male_Armor_RightHandMiddle3
+      parentName: PT_Medieval_Male_Armor_RightHandMiddle2
+      position: {x: 0.002373519, y: -0.035503004, z: -0.0069762873}
+      rotation: {x: -0.8366603, y: 0.02463953, z: -0.5381127, w: 0.09913274}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightHandMiddle3_end
+      parentName: PT_Medieval_Male_Armor_RightHandMiddle3
+      position: {x: -0, y: 0.03625977, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightHandRing1
+      parentName: PT_Medieval_Male_Armor_RightHand
+      position: {x: 0.020498842, y: -0.10116947, z: 0.009757056}
+      rotation: {x: 0.07037916, y: -0.011327009, z: -0.080781415, w: 0.99417955}
+      scale: {x: 0.9999999, y: 1, z: 0.99999976}
+    - name: PT_Medieval_Male_Armor_RightHandRing2
+      parentName: PT_Medieval_Male_Armor_RightHandRing1
+      position: {x: 0.0044584177, y: -0.04005793, z: 0.0016475135}
+      rotation: {x: -0.0246396, y: -0.007513228, z: 0.005860463, w: 0.99965096}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: PT_Medieval_Male_Armor_RightHandRing3
+      parentName: PT_Medieval_Male_Armor_RightHandRing2
+      position: {x: 0.0034183979, y: -0.03675572, z: -0.0031682681}
+      rotation: {x: -0.035339516, y: 0.041175395, z: -0.9973863, w: 0.047712103}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_RightHandRing3_end
+      parentName: PT_Medieval_Male_Armor_RightHandRing3
+      position: {x: -0, y: 0.037049994, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightHandPinky1
+      parentName: PT_Medieval_Male_Armor_RightHand
+      position: {x: 0.04289963, y: -0.094950356, z: 0.003127688}
+      rotation: {x: 0.20583451, y: 0.0075915256, z: 0.036066517, w: 0.9778925}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: PT_Medieval_Male_Armor_RightHandPinky2
+      parentName: PT_Medieval_Male_Armor_RightHandPinky1
+      position: {x: -0.00074994087, y: -0.028182609, z: 0.010203668}
+      rotation: {x: -0.09345788, y: 0.0013525714, z: 0.004192465, w: 0.99561346}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: PT_Medieval_Male_Armor_RightHandPinky3
+      parentName: PT_Medieval_Male_Armor_RightHandPinky2
+      position: {x: -0.001771841, y: -0.024944257, z: 0.0021655858}
+      rotation: {x: 0.6673336, y: 0.008511913, z: 0.742664, w: 0.055169623}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999976}
+    - name: PT_Medieval_Male_Armor_RightHandPinky3_end
+      parentName: PT_Medieval_Male_Armor_RightHandPinky3
+      position: {x: -0, y: 0.02510088, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_Neck
+      parentName: PT_Medieval_Male_Armor_Spine3
+      position: {x: -0, y: 0.13004816, z: -0.005071554}
+      rotation: {x: 0.054549646, y: -0, z: -0, w: 0.9985111}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_Head
+      parentName: PT_Medieval_Male_Armor_Neck
+      position: {x: -0, y: 0.09119431, z: 0.024500808}
+      rotation: {x: -0.00000001046601, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_HeadTop
+      parentName: PT_Medieval_Male_Armor_Head
+      position: {x: -0, y: 0.20320211, z: 0.014664962}
+      rotation: {x: -1.1368684e-13, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_HeadTopFeathers
+      parentName: PT_Medieval_Male_Armor_HeadTop
+      position: {x: -0, y: 0.09699561, z: -0.06534467}
+      rotation: {x: -0.000000020385983, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_HeadTopFeathers_end
+      parentName: PT_Medieval_Male_Armor_HeadTopFeathers
+      position: {x: -0, y: 0.116953276, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_Cape
+      parentName: PT_Medieval_Male_Armor_Spine3
+      position: {x: -0, y: 0.08857002, z: -0.14888085}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightCape
+      parentName: PT_Medieval_Male_Armor_Cape
+      position: {x: 0.11145995, y: -0.0020715927, z: 0.000051767824}
+      rotation: {x: 0.000000011175871, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightCape2
+      parentName: PT_Medieval_Male_Armor_RightCape
+      position: {x: -0.008249864, y: -0.3640409, z: -0.04708105}
+      rotation: {x: -0.000000014901161, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: PT_Medieval_Male_Armor_RightCape3
+      parentName: PT_Medieval_Male_Armor_RightCape2
+      position: {x: 0.0056831455, y: -0.3593366, z: -0.036017306}
+      rotation: {x: 0.000000014901161, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightCape4
+      parentName: PT_Medieval_Male_Armor_RightCape3
+      position: {x: -0.0011662483, y: -0.32133377, z: -0.037259303}
+      rotation: {x: 0.000000018626453, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightCape4_end
+      parentName: PT_Medieval_Male_Armor_RightCape4
+      position: {x: -0, y: 0.32348877, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftCape
+      parentName: PT_Medieval_Male_Armor_Cape
+      position: {x: -0.11146, y: -0.0020680688, z: 0.00005201578}
+      rotation: {x: 1, y: -1.7135652e-15, z: 0.00000004371139, w: 6.1232415e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftCape2
+      parentName: PT_Medieval_Male_Armor_LeftCape
+      position: {x: 0.00825, y: 0.36404774, z: 0.047082014}
+      rotation: {x: -0.00000003352761, y: -0.000000043711214, z: 1.7146361e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftCape3
+      parentName: PT_Medieval_Male_Armor_LeftCape2
+      position: {x: -0.005683012, y: 0.3593331, z: 0.036016554}
+      rotation: {x: 0.0000000037252903, y: -1.7763494e-13, z: -5.4924793e-22, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftCape4
+      parentName: PT_Medieval_Male_Armor_LeftCape3
+      position: {x: 0.0011660004, y: 0.3213335, z: 0.037259124}
+      rotation: {x: -0.000000007450581, y: -7.4539685e-19, z: -1.3896634e-22, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftCape4_end
+      parentName: PT_Medieval_Male_Armor_LeftCape4
+      position: {x: -0, y: 0.32348862, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_LeftUpLeg
+      parentName: PT_Medieval_Male_Armor_Hips
+      position: {x: -0.073511474, y: -0.09832771, z: -0.011281599}
+      rotation: {x: -0.00021828423, y: 0.009652844, z: 0.9996514, w: 0.024576025}
+      scale: {x: 1.0000879, y: 1.0000001, z: 1.0000117}
+    - name: PT_Medieval_Male_Armor_Sheat_slot
+      parentName: PT_Medieval_Male_Armor_LeftUpLeg
+      position: {x: 0.10185492, y: 0.08588989, z: -0.0004825264}
+      rotation: {x: 0.5862357, y: 0.18263881, z: 0.7604312, w: 0.21145992}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999999}
+    - name: PT_Medieval_Male_Armor_LeftLeg
+      parentName: PT_Medieval_Male_Armor_LeftUpLeg
+      position: {x: 0.002502644, y: 0.42045555, z: 0.004834265}
+      rotation: {x: -0.021333938, y: -0.0005653556, z: 0.03104738, w: 0.99929005}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: PT_Medieval_Male_Armor_LeftFoot
+      parentName: PT_Medieval_Male_Armor_LeftLeg
+      position: {x: -0.000059235015, y: 0.40425274, z: -0.013341303}
+      rotation: {x: 0.4882195, y: 0.0007072034, z: -0.00039426555, w: 0.87272054}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: PT_Medieval_Male_Armor_LeftToe
+      parentName: PT_Medieval_Male_Armor_LeftFoot
+      position: {x: 0.00003139874, y: 0.14365472, z: -0.011110349}
+      rotation: {x: 0.3146614, y: 0.08885895, z: -0.02959607, w: 0.9445721}
+      scale: {x: 0.99999976, y: 1, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_LeftToe_end
+      parentName: PT_Medieval_Male_Armor_LeftToe
+      position: {x: -0, y: 0.14408493, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_Left_BackCloth
+      parentName: PT_Medieval_Male_Armor_LeftUpLeg
+      position: {x: 0.015365814, y: -0.025536641, z: -0.13228725}
+      rotation: {x: -0.02457461, y: 0.99965745, z: -0.008999698, w: 0.00020006046}
+      scale: {x: 1, y: 1.0000005, z: 1}
+    - name: PT_Medieval_Male_Armor_Left_BackCloth2
+      parentName: PT_Medieval_Male_Armor_Left_BackCloth
+      position: {x: -0.0005745446, y: 0.18248123, z: 0.008539864}
+      rotation: {x: 0.000000014595372, y: -0.000000033789306, z: -0.0000000036482706, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: PT_Medieval_Male_Armor_Left_BackCloth3
+      parentName: PT_Medieval_Male_Armor_Left_BackCloth2
+      position: {x: -0.0017779332, y: 0.2039081, z: 0.010575759}
+      rotation: {x: 1.7865084e-14, y: 3.050805e-12, z: 1.9884076e-14, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: PT_Medieval_Male_Armor_Left_BackCloth3_end
+      parentName: PT_Medieval_Male_Armor_Left_BackCloth3
+      position: {x: -0, y: 0.20419009, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_Left_FrontCloth
+      parentName: PT_Medieval_Male_Armor_LeftUpLeg
+      position: {x: 0.016250633, y: -0.018712059, z: 0.12227619}
+      rotation: {x: -0.00020327927, y: 0.00869, z: 0.9996602, w: -0.024574205}
+      scale: {x: 0.99995846, y: 1, z: 0.99999434}
+    - name: PT_Medieval_Male_Armor_Left_FrontCloth2
+      parentName: PT_Medieval_Male_Armor_Left_FrontCloth
+      position: {x: 0.000000095619825, y: -0.17491706, z: 0.007321941}
+      rotation: {x: 0.000000013768823, y: 0.0000053227823, z: 0.0000000073531945, w: 1}
+      scale: {x: 1, y: 0.9999998, z: 0.9999999}
+    - name: PT_Medieval_Male_Armor_Left_FrontCloth3
+      parentName: PT_Medieval_Male_Armor_Left_FrontCloth2
+      position: {x: 0.0000000020478252, y: -0.21640903, z: 0.004067982}
+      rotation: {x: 6.884421e-10, y: -2.140714e-10, z: -4.2215257e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_Left_FrontCloth3_end
+      parentName: PT_Medieval_Male_Armor_Left_FrontCloth3
+      position: {x: -0, y: 0.21644725, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_RightUpLeg
+      parentName: PT_Medieval_Male_Armor_Hips
+      position: {x: 0.073511474, y: -0.09832771, z: -0.010343301}
+      rotation: {x: 0.00017070881, y: 0.0067081163, z: 0.9996754, w: -0.024578998}
+      scale: {x: 0.9999777, y: 0.9999999, z: 0.99999815}
+    - name: PT_Medieval_Male_Armor_Second_Weapon_slot
+      parentName: PT_Medieval_Male_Armor_RightUpLeg
+      position: {x: -0.061379295, y: -0.023051223, z: 0.095135055}
+      rotation: {x: 0.8966311, y: 0.15798496, z: 0.41029146, w: 0.052481588}
+      scale: {x: 0.9999999, y: 0.99999976, z: 0.9999999}
+    - name: PT_Medieval_Male_Armor_RightLeg
+      parentName: PT_Medieval_Male_Armor_RightUpLeg
+      position: {x: -0.0025030226, y: 0.4204198, z: 0.0058467966}
+      rotation: {x: -0.019684978, y: 0.00061110285, z: -0.031053394, w: 0.99932367}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1.0000001}
+    - name: PT_Medieval_Male_Armor_RightFoot
+      parentName: PT_Medieval_Male_Armor_RightLeg
+      position: {x: 0.000060304606, y: 0.40427065, z: -0.013081979}
+      rotation: {x: 0.48185948, y: -0.00076723564, z: 0.00042223372, w: 0.8762481}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: PT_Medieval_Male_Armor_RightToe
+      parentName: PT_Medieval_Male_Armor_RightFoot
+      position: {x: -0.0000252546, y: 0.14381813, z: -0.008864944}
+      rotation: {x: 0.3227952, y: -0.088843055, z: 0.030451907, w: 0.9417977}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: PT_Medieval_Male_Armor_RightToe_end
+      parentName: PT_Medieval_Male_Armor_RightToe
+      position: {x: -0, y: 0.14409085, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_Right_BackCloth
+      parentName: PT_Medieval_Male_Armor_RightUpLeg
+      position: {x: -0.015347275, y: -0.024976691, z: -0.13334002}
+      rotation: {x: 0.00018332107, y: 0.006591946, z: 0.99967617, w: 0.02457876}
+      scale: {x: 0.99995714, y: 0.9999997, z: 0.9999966}
+    - name: PT_Medieval_Male_Armor_RightBackCloth2
+      parentName: PT_Medieval_Male_Armor_Right_BackCloth
+      position: {x: 0.00057459355, y: -0.18248108, z: -0.0085401}
+      rotation: {x: 0.000000019439671, y: 0.000002880411, z: -1.6354569e-10, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_Right_BackCloth3
+      parentName: PT_Medieval_Male_Armor_RightBackCloth2
+      position: {x: 0.0017782137, y: -0.20390806, z: -0.010576116}
+      rotation: {x: 6.5287547e-16, y: 1.7283275e-10, z: -2.8090828e-14, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_Right_BackCloth3_end
+      parentName: PT_Medieval_Male_Armor_Right_BackCloth3
+      position: {x: -0, y: 0.20418984, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_Right_FrontCloth
+      parentName: PT_Medieval_Male_Armor_RightUpLeg
+      position: {x: -0.016272493, y: -0.019253818, z: 0.12125369}
+      rotation: {x: 0.024579057, y: 0.9996745, z: -0.006834333, w: -0.00017389702}
+      scale: {x: 1, y: 0.9999997, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_Right_FrontCloth2
+      parentName: PT_Medieval_Male_Armor_Right_FrontCloth
+      position: {x: 0.000000006421924, y: 0.1749171, z: -0.0073220036}
+      rotation: {x: 0.000000004596317, y: -0.000000020056028, z: -0.00000000169333, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: PT_Medieval_Male_Armor_Right_FrontCloth3
+      parentName: PT_Medieval_Male_Armor_Right_FrontCloth2
+      position: {x: 0.000000008581737, y: 0.2164091, z: -0.0040680156}
+      rotation: {x: -8.2243104e-15, y: -2.1191443e-13, z: 7.927603e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_Right_FrontCloth3_end
+      parentName: PT_Medieval_Male_Armor_Right_FrontCloth3
+      position: {x: -0, y: 0.21644722, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_01_A_legs
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_01_A_boots
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_03_A_cape
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_head_01
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_naked_00_body
+      parentName: PolytopeCharacter(Clone)
+      position: {x: -0, y: 1.157621e-23, z: -7.105427e-17}
+      rotation: {x: 0.00000008146034, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_05_A_body
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_05_A_helmet
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_03_A_body
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_01_A_cape
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_03_A_gauntlets
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 5.3290704e-17, y: 1.157621e-23, z: -7.105427e-17}
+      rotation: {x: 0.00000008146034, y: -3.67342e-40, z: 1.83671e-40, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_05_A_boots
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_naked_00_boots
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_05_A_legs
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_01_A_body
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_03_A_helmet_nv
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_01_A_gauntlets
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_03_A_boots
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_05_A_cape
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_beard_02
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_naked_00_gauntlets
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_03_A_legs
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_01_A_helmet
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 5.3290704e-17, y: 1.157621e-23, z: -7.105427e-17}
+      rotation: {x: 0.00000008146034, y: -3.67342e-40, z: 1.83671e-40, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_05_A_gauntlets
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_hair_01
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PT_Medieval_Male_Armor_naked_00_legs
+      parentName: PolytopeCharacter(Clone)
+      position: {x: 3.1086245e-15, y: -4.2632553e-16, z: -2.664536e-16}
+      rotation: {x: 0.00000008146034, y: 2.3509886e-38, z: -1.1754944e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 79812551b3b29264e84b1b81593f6f03, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

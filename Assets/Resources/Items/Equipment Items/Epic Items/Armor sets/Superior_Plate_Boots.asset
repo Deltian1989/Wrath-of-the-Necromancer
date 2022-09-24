@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec1c60bc4259ccc40bb771e79e7f2b51, type: 3}
+  m_Name: Superior_Plate_Boots
+  m_EditorClassIdentifier: 
+  ID: 7
+  itemName: Superior Plate Boots
+  image: {fileID: 21300000, guid: 2bcf87500b0aa654388892e910b66573, type: 3}
+  useSFX: {fileID: 8300000, guid: 61721f851cc141740a2ab00c66d91dfb, type: 3}
+  stackSize: 1
+  equipmentSlot: 3
+  meshName: EpicPlateBoots
+  armor: 20
+  magicResist: 5
+  requiredLevel: 0
+  requiredDexterity: 10
+  requiredMagic: 8

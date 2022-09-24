@@ -1,0 +1,74 @@
+{
+    "name": "CameraControls",
+    "maps": [
+        {
+            "name": "CameraActions",
+            "id": "c9586b7d-d6b0-494b-a0a2-466247f7f22a",
+            "actions": [
+                {
+                    "name": "EnableOrbitAroundPlayer",
+                    "type": "Button",
+                    "id": "4839abe1-ddcb-4bd8-a838-118b32d33021",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ZoomInOut",
+                    "type": "Value",
+                    "id": "48fef850-e71e-4f09-b30a-d22ca6233168",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "OrbitAroundPlayer",
+                    "type": "Value",
+                    "id": "9c6d7262-6d23-4d09-b33b-a38efa58879e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3f01ff3b-af28-4840-815a-b95dd2455496",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "Hold(duration=0.1,pressPoint=0.1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnableOrbitAroundPlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "56716101-b434-44d5-add8-b4378d0493fd",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ZoomInOut",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bfe645cd-6f13-4b72-8cf9-6adcf64b3b81",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OrbitAroundPlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
