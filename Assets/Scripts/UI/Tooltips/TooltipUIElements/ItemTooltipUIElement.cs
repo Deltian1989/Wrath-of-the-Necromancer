@@ -72,9 +72,9 @@ namespace WotN.UI.Tooltips.TooltipUIElements
 
             DisplayMode displayMode;
 
-            if (StashManager.Instance.IsStashOpened)
-                displayMode = DisplayMode.InventoryToStash;
-            else
+            //if (StashManager.Instance.IsStashOpened)
+            //    displayMode = DisplayMode.InventoryToStash;
+            //else
                 displayMode = itemSlot.GetDisplayMode();
 
             TooltipManager.Instance.DisplayTooltipForItem(transform.position, tooltipHorizontalOffset, itemStack.item, displayMode);

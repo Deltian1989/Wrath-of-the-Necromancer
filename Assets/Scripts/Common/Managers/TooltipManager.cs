@@ -76,7 +76,14 @@ namespace WotN.Common.Managers
         {
             var itemDescription = ItemHelper.GenerateItemDescription(item, displayMode);
 
-            itemTooltip.DisplayTooltip(itemSlotPosition, horizontalOffsetint, item.itemName, itemDescription, "Left click to use the item\nShift + left click to move the item to the stash\nCtrl + left click to drop the item");
+            string shortcutKeyTip;
+
+            if (displayMode != DisplayMode.Stash)
+                shortcutKeyTip = "Left click to use the item\nShift + left click to move the item to the stash\nCtrl + left click to drop the item";
+            else
+                shortcutKeyTip = "Left click to use the item\nShift + left click to move the item to your inventory\nCtrl + left click to drop the item";
+
+            itemTooltip.DisplayTooltip(itemSlotPosition, horizontalOffsetint, item.itemName, itemDescription, shortcutKeyTip);
         }
 
         public void HideAllTooltips()

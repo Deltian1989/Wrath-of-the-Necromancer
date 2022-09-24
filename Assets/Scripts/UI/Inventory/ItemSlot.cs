@@ -79,10 +79,13 @@ namespace WotN.UI.Inventory
         {
             if (Keyboard.current.shiftKey.ReadValue() > 0f)
             {
-                if (displayMode == DisplayMode.Inventory)
-                    StashManager.Instance.AddItemToStash(itemStack);
-                else if (displayMode == DisplayMode.Stash)
-                    InventoryManager.Instance.AddItemFromStash(itemStack);
+                if (StashManager.Instance.IsStashOpened)
+                {
+                    if (displayMode == DisplayMode.Inventory)
+                        StashManager.Instance.AddItemToStash(itemStack);
+                    else if (displayMode == DisplayMode.Stash)
+                        InventoryManager.Instance.AddItemFromStash(itemStack);
+                }
             }
             else
             {
