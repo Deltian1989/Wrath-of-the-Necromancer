@@ -88,6 +88,14 @@ namespace WotN.Interactables
 
         public virtual void OpenDialogueBox()
         {
+            int greetingsLength = dialogueSet.greetingAudioClips.Length;
+
+            int i = Random.Range(0, greetingsLength);
+
+            AudioClip greeting = dialogueSet.greetingAudioClips[i];
+
+            AudioManager.Instance.PlaySpeechAudio(greeting);
+
             dialogueManager.PopUpDialogueWindow(dialogueSet.dialogueOptions);
         }
 

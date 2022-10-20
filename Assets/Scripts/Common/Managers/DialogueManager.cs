@@ -81,8 +81,10 @@ namespace WotN.Common.Managers
 
                 var dialogueTalk = dialogueOptions[i].Talk;
 
+                var talkAudioClip = dialogueOptions[i].talkAudioClip;
+
                 dialogueOptionButtons[i].onClick
-                    .AddListener(() => DisplaySpeechSlideWindow(dialogueTalk) );
+                    .AddListener(() => DisplaySpeechSlideWindow(dialogueTalk, talkAudioClip) );
             }
 
             int lastIndex = dialogueOptions.Length;
@@ -110,6 +112,8 @@ namespace WotN.Common.Managers
 
         public void SetNPCIsNotTalking()
         {
+            AudioManager.Instance.StopSpeechAudio();
+
             speechSlideArea.DismissSpeechSlide();
 
             isNPCTalking = false;
@@ -136,8 +140,10 @@ namespace WotN.Common.Managers
             onDialogueBoxClosed?.Invoke();
         }
 
-        private void DisplaySpeechSlideWindow(string dialogueTalk)
+        private void DisplaySpeechSlideWindow(string dialogueTalk, AudioClip talkClip)
         {
+            AudioManager.Instance.PlaySpeechAudio(talkClip);
+
             dialogueWindow.gameObject.SetActive(false);
 
             isNPCTalking = true;

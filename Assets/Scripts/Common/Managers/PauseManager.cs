@@ -87,6 +87,12 @@ namespace WotN.Common.Managers
                             stashUI.CloseStashGoldWindow();
                             return;
                         }
+                        else if (StashManager.Instance.IsWithdrawGoldWindowOpened)
+                        {
+                            AudioManager.Instance.PlayClickButton();
+                            stashUI.CloseWithdrawGoldWindow();
+                            return;
+                        }
                             
 
                         if (StashManager.Instance.IsStashOpened)

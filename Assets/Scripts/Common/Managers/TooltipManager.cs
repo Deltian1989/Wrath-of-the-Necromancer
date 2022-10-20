@@ -1,6 +1,7 @@
 using System.Linq;
 using UnityEngine;
 using WotN.ScriptableObjects.Items;
+using WotN.ScriptableObjects.ShortcutKeyTips;
 using WotN.ScriptableObjects.Tooltips;
 using WotN.UI.Tooltips.TooltipWindows;
 using WotN.UI.Utils;
@@ -12,9 +13,14 @@ namespace WotN.Common.Managers
     {
         public static TooltipManager Instance { get; private set; }
 
+        [Header("Tooltip SOs")]
         [SerializeField]
         private InfoTooltip[] tooltips;
 
+        [SerializeField]
+        private ShortcutKeyTip[] shortcutKeyTips;
+
+        [Header("Tooltip UI")]
         [SerializeField]
         private Transform tooltipArea;
 
@@ -27,12 +33,30 @@ namespace WotN.Common.Managers
         [SerializeField]
         private ExtendedGenericTooltip extendedGenericTooltip;
 
+        [Header("Settings for shortcut key tips")]
+        [SerializeField]
+        private int[] stashShortcutKeyIds;
+
+        [SerializeField]
+        private int[] inventoryShortcutKeyIds;
+
+        [SerializeField]
+        private int[] inventoryToStashShortcutKeyIds;
+
+        [SerializeField]
+        private int[] equipmentShortcutKeyIds;
+
+        [SerializeField]
+        private int[] equipmentToStashShortcutKeyIds;
+
+
         void Awake()
         {
             if (Instance == null)
             {
                 Instance = this;
                 tooltips = Resources.LoadAll<InfoTooltip>("Tooltips");
+                shortcutKeyTips= Resources.LoadAll<ShortcutKeyTip>("Shortcut key tips");
             }
         }
 
@@ -46,42 +70,35 @@ namespace WotN.Common.Managers
             return genericTooltip.gameObject.activeInHierarchy;
         }
 
+        public void DisplayTooltipWithShortcutKeyTip(Vector3 uiElementPosition, float horizontalOffsetint, int tooltipId, DisplayMode displayMode, UIElementType uiElementType)
+        {
+            var tooltip = tooltips.FirstOrDefault(x => x.id == tooltipId);
+
+            string shortcutKeyTip = shortcutKeyTips.First(x => x.displayMode == displayMode && x.uiElementType == uiElementType).shortcutKeyTipDescription;
+
+            extendedGenericTooltip.DisplayTooltip(uiElementPosition, horizontalOffsetint, tooltip.title, shortcutKeyTip);
+        }
+
         public void DisplayInfoTooltip(Vector3 uiElementPosition, float horizontalOffsetint, int tooltipId)
         {
             var tooltip = tooltips.FirstOrDefault(x => x.id == tooltipId);
 
-            switch (tooltip)
-            {
-                case InfoTooltipWithDescription:
-                    {
-                        var extendedTooltip = (InfoTooltipWithDescription)tooltip;
-
-                        extendedGenericTooltip.DisplayTooltip(uiElementPosition, horizontalOffsetint, extendedTooltip.title, extendedTooltip.description);
-                    }
-                    break;
-                case InfoTooltip:
-                    {
-                        genericTooltip.DisplayTooltip(uiElementPosition, horizontalOffsetint,tooltip.title);
-                    }
-                    break;
-                default:
-                    Debug.LogError($"The tooltip with id {tooltipId} does not exist.");
-                    break;
-            }
-
-
+            genericTooltip.DisplayTooltip(uiElementPosition, horizontalOffsetint, tooltip.title);
         }
 
-        public void DisplayTooltipForItem(Vector3 itemSlotPosition, float horizontalOffsetint, Item item, DisplayMode displayMode)
+        public void DisplayTooltipForItem(Vector3 itemSlotPosition, float horizontalOffsetint, Item item, DisplayMode mode, UIElementType uiElementType)
         {
-            var itemDescription = ItemHelper.GenerateItemDescription(item, displayMode);
+            var itemDescription = GenerateItemDescription(item);
 
-            string shortcutKeyTip;
+            var shortcutKeytipSO = shortcutKeyTips.SingleOrDefault(x => x.displayMode == mode && x.uiElementType == uiElementType);
 
-            if (displayMode != DisplayMode.Stash)
-                shortcutKeyTip = "Left click to use the item\nShift + left click to move the item to the stash\nCtrl + left click to drop the item";
-            else
-                shortcutKeyTip = "Left click to use the item\nShift + left click to move the item to your inventory\nCtrl + left click to drop the item";
+            if (shortcutKeytipSO == null)
+            {
+                Debug.LogError($"Missing shortcut key tip with display mode {mode} and UI element type {uiElementType}");
+                return;
+            }
+
+            string shortcutKeyTip = shortcutKeytipSO.shortcutKeyTipDescription;
 
             itemTooltip.DisplayTooltip(itemSlotPosition, horizontalOffsetint, item.itemName, itemDescription, shortcutKeyTip);
         }

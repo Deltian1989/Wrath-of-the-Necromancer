@@ -1,6 +1,7 @@
 using WotN.Player;
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections.Generic;
 
 namespace WotN.Interactables
 {
@@ -9,7 +10,7 @@ namespace WotN.Interactables
         private static readonly int moveParam = Animator.StringToHash("move");
 
         [SerializeField]
-        private Transform[] stops;
+        private List<Vector3> stops = new List<Vector3>();
 
         [SerializeField]
         private float waitTime = 3;
@@ -49,12 +50,12 @@ namespace WotN.Interactables
                     {
                         ++currentIndex;
 
-                        if (currentIndex >= stops.Length)
+                        if (currentIndex >= stops.Count)
                         {
                             currentIndex = 0;
                         }
 
-                        navMeshAgent.destination = stops[currentIndex].position;
+                        navMeshAgent.destination = stops[currentIndex];
 
                         currentWaitTime = waitTime;
                     }
@@ -75,6 +76,14 @@ namespace WotN.Interactables
             }
 
             anim.SetFloat(moveParam, navMeshAgent.velocity.magnitude);
+        }
+
+        public void SetWalkStops(Transform localSpawnPointPosition,Vector3[] walkStops)
+        {
+            for (int i = 0; i < walkStops.Length; i++)
+            {
+                stops.Add(localSpawnPointPosition.localPosition + walkStops[i]);
+            }
         }
 
         public void StopTalking()

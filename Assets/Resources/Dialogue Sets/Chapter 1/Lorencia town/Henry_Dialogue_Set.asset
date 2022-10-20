@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16018c2b7bbc3a4cac204a361f62394, type: 3}
+  m_Name: Henry_Dialogue_Set
+  m_EditorClassIdentifier: 
+  ID: 1
+  sayHelloAudioClips:
+  - {fileID: 8300000, guid: 699819cfd59761e4aabf6dd8e2646ef0, type: 3}
+  greetingAudioClips:
+  - {fileID: 8300000, guid: 99c3d2abc202d704ab897ce2fdfa5479, type: 3}
+  - {fileID: 8300000, guid: 626fb68793dadf348a0b4c325e04f386, type: 3}
+  - {fileID: 8300000, guid: 02a6b1895655f7f4eb5142afb27c3d2b, type: 3}
+  dialogueOptions:
+  - DialogueOptionText: About the town
+    Talk: This town belongs to the well known kingdom in this land. Feel free to
+      talk to many of the people from here. Maybe they may have good offering for
+      you.
+    talkAudioClip: {fileID: 8300000, guid: 6cb80441ebe9a89439dbbcc499c91e28, type: 3}
+  - DialogueOptionText: About the dwarven mine
+    Talk: Once the dwarven mine out there used to be a really good prosperous place
+      to work for dwarves. But now it became a frightening nest of evil and only
+      few dwarves made it to survive and escape from this horrible place. Be careful
+      when coming to this place, the evil skeletons, demons and even dwarves allied
+      to them are really powerful to us.
+    talkAudioClip: {fileID: 8300000, guid: ec993dd58ed36004ab4ce7ba94a0aa6a, type: 3}
+  - DialogueOptionText: Rumors
+    Talk: Some people say that someone from our town used to have to do with necromancy
+      and because of that the horde of skeletons and demons besiege our town. If
+      it's true then I can't believe in this that really happened.
+    talkAudioClip: {fileID: 8300000, guid: 0518686c171485647b1f2319f71c233e, type: 3}

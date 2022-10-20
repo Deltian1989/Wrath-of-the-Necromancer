@@ -10,7 +10,7 @@ namespace WotN.UI.Tooltips.TooltipUIElements
     public class ItemTooltipUIElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         [SerializeField]
-        protected float tooltipHorizontalOffset = 0;
+        private float tooltipHorizontalOffset = 0;
 
         private ItemSlot itemSlot;
 
@@ -33,13 +33,9 @@ namespace WotN.UI.Tooltips.TooltipUIElements
         {
             ItemStack itemStack = itemSlot.GetItemStack();
 
-            if (!TooltipManager.Instance.IsItemTooltipActive() && (itemStack != null && (itemStack.item is ItemWeaponBase || itemStack.item is ItemArmor)))
+            if (!TooltipManager.Instance.IsItemTooltipActive() && itemStack != null)
             {
                 DisplayTooltipForItem();
-            }
-            else if (!TooltipManager.Instance.IsItemTooltipActive() && (itemStack != null && (itemStack.item is Item)))
-            {
-                CursorManager.Instance.SetCursor(CursorManager.Instance.DrinkPotionCursorTexture);
             }
         }
 
@@ -53,15 +49,9 @@ namespace WotN.UI.Tooltips.TooltipUIElements
 
                     CursorManager.Instance.SetDefaultCursorTexture();
                 }
-                else if (itemStack.item is ItemWeaponBase || itemStack.item is ItemArmor)
-                {
-                    DisplayTooltipForItem();
-                }
                 else
                 {
-                    TooltipManager.Instance.HideAllTooltips();
-
-                    CursorManager.Instance.SetCursor(CursorManager.Instance.DrinkPotionCursorTexture);
+                    DisplayTooltipForItem();
                 }
             }
         }
@@ -70,16 +60,24 @@ namespace WotN.UI.Tooltips.TooltipUIElements
         {
             ItemStack itemStack = itemSlot.GetItemStack();
 
-            DisplayMode displayMode;
+            DisplayMode displayMode =itemSlot.GetDisplayMode();
 
-            //if (StashManager.Instance.IsStashOpened)
-            //    displayMode = DisplayMode.InventoryToStash;
-            //else
-                displayMode = itemSlot.GetDisplayMode();
+            UIElementType uiElementType;
 
-            TooltipManager.Instance.DisplayTooltipForItem(transform.position, tooltipHorizontalOffset, itemStack.item, displayMode);
+            if (itemStack.item is ItemEquipment)
+                uiElementType = UIElementType.EquipmentItem;
+            else
+                uiElementType = UIElementType.NormalItem;
 
-            CursorManager.Instance.SetCursor(CursorManager.Instance.EquipItemCursorTexture);
+            if (displayMode != DisplayMode.Stash)
+            {
+                if (StashManager.Instance.IsStashOpened)
+                    displayMode = DisplayMode.InventoryToStash;
+                else
+                    displayMode = DisplayMode.Inventory;
+            }
+
+            TooltipManager.Instance.DisplayTooltipForItem(transform.position, tooltipHorizontalOffset, itemStack.item, displayMode, uiElementType);
         }
     }
 }

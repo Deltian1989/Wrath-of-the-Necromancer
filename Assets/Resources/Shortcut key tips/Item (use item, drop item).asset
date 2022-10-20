@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36ab1435f3d75bc438528a8ed6657e1d, type: 3}
+  m_Name: Item (use item, drop item)
+  m_EditorClassIdentifier: 
+  id: 4
+  displayMode: 0
+  shortcutKeyTipDescription: 'Left click to use this item
+
+    Right click to drop
+    some amount of this stack
+
+    Shift + right click to drop the entire stack'

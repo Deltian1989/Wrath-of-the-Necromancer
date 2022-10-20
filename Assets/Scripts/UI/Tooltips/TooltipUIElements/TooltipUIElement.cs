@@ -7,7 +7,7 @@ namespace WotN.UI.Tooltips.TooltipUIElements
     public class TooltipUIElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         [SerializeField]
-        protected float tooltipHorizontalOffset = 0;
+        private float tooltipHorizontalOffset = 0;
 
         [SerializeField]
         private int tooltipId;

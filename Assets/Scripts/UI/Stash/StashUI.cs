@@ -12,17 +12,29 @@ namespace WotN.UI.Stash
         [SerializeField]
         private Transform inventoryParent;
 
-        [SerializeField]
-        private Text goldText;
-
+        [Header("Stash gold window")]
         [SerializeField]
         private GameObject stashGoldWindow;
 
         [SerializeField]
-        private TMPro.TMP_InputField stashGoldInput;
+        private Text playerGoldText;
 
         [SerializeField]
-        private AudioClip stashGoldClip;
+        private TMPro.TMP_InputField stashGoldInput;
+
+        [Header("Withdraw gold window")]
+        [SerializeField]
+        private GameObject withdrawGoldWindow;
+
+        [SerializeField]
+        private Text stashedGoldText;
+
+        [SerializeField]
+        private TMPro.TMP_InputField withdrawGoldInput;
+
+        [Header("Other")]
+        [SerializeField]
+        private AudioClip goldClip;
 
         private ItemSlot[] itemSlots;
 
@@ -51,34 +63,78 @@ namespace WotN.UI.Stash
             }
         }
 
-        public void OnGoldButtonClicked()
+        public void DisplayStashGoldWindow()
         {
-            if (StashManager.Instance.IsStashOpened == true)
+            if (PlayerManager.Instance.GetPlayerGold() > 0)
+            {
+                if (StashManager.Instance.IsStashOpened == true)
+                {
+                    if (Keyboard.current.shiftKey.ReadValue() <= 0f)
+                    {
+                        stashGoldInput.Select();
+
+                        StashManager.Instance.IsStashGoldWindowOpened = true;
+
+                        int playerGold = PlayerManager.Instance.GetPlayerGold();
+
+                        stashGoldInput.text = playerGold.ToString();
+                        stashGoldWindow.SetActive(true);
+
+                        AudioManager.Instance.PlayClickButton();
+                    }
+                    else
+                    {
+                        int playerGold = PlayerManager.Instance.GetPlayerGold();
+
+                        PlayerManager.Instance.SetPlayerGold(0);
+
+                        StashManager.Instance.StashGold(playerGold);
+
+                        AudioManager.Instance.PlayUISFX(goldClip);
+                    }
+                }
+            }
+        }
+
+        public void DisplayWithdrawGoldWindow()
+        {
+            if (StashManager.Instance.GetStashedGold() > 0)
             {
                 if (Keyboard.current.shiftKey.ReadValue() <= 0f)
                 {
-                    stashGoldInput.ActivateInputField();
+                    withdrawGoldInput.Select();
 
-                    StashManager.Instance.IsStashGoldWindowOpened = true;
+                    StashManager.Instance.IsWithdrawGoldWindowOpened = true;
 
-                    int playerGold = PlayerManager.Instance.GetPlayerGold();
+                    int stashedGold = StashManager.Instance.GetStashedGold();
 
-                    stashGoldInput.text = playerGold.ToString();
-                    stashGoldWindow.SetActive(true);
+                    withdrawGoldInput.text = stashedGold.ToString();
+                    withdrawGoldWindow.SetActive(true);
 
                     AudioManager.Instance.PlayClickButton();
                 }
                 else
                 {
-                    int playerGold = PlayerManager.Instance.GetPlayerGold();
+                    int stashedGold = StashManager.Instance.GetStashedGold();
 
-                    PlayerManager.Instance.SetPlayerGold(0);
+                    StashManager.Instance.SetStashedGold(0);
 
-                    StashManager.Instance.StashGold(playerGold);
+                    PlayerManager.Instance.AddPlayerGold(stashedGold);
 
-                    AudioManager.Instance.PlayUISFX(stashGoldClip);
+                    AudioManager.Instance.PlayUISFX(goldClip);
                 }
             }
+        }
+
+        public void CloseWithdrawGoldWindow()
+        {
+            StashManager.Instance.IsWithdrawGoldWindowOpened = false;
+
+            withdrawGoldInput.DeactivateInputField();
+
+            withdrawGoldInput.text = "0";
+
+            withdrawGoldWindow.SetActive(false);
         }
 
         public void CloseStashGoldWindow()
@@ -108,13 +164,37 @@ namespace WotN.UI.Stash
 
             StashManager.Instance.StashGold(goldToStash);
 
-            AudioManager.Instance.PlayUISFX(stashGoldClip);
+            AudioManager.Instance.PlayUISFX(goldClip);
 
             CloseStashGoldWindow();
         }
 
-        public void OnValueChanged(string goldText)
+        public void WithdrawGold()
         {
+            string goldText = withdrawGoldInput.text;
+
+            withdrawGoldInput.DeactivateInputField();
+
+            int goldToWithdraw = int.Parse(goldText);
+
+            withdrawGoldInput.text = "0";
+
+            int stashedGold = StashManager.Instance.GetStashedGold();
+
+            StashManager.Instance.SetStashedGold(stashedGold - goldToWithdraw);
+
+            PlayerManager.Instance.AddPlayerGold(goldToWithdraw);
+
+            AudioManager.Instance.PlayUISFX(goldClip);
+
+            CloseWithdrawGoldWindow();
+        }
+
+        public void OnGoldToStashChanged(string goldText)
+        {
+            if (string.IsNullOrWhiteSpace(goldText))
+                goldText = "0";
+
             int goldToStash = int.Parse(goldText);
 
             int playerGold = PlayerManager.Instance.GetPlayerGold();
@@ -124,14 +204,28 @@ namespace WotN.UI.Stash
             stashGoldInput.text= effectiveGold.ToString();
         }
 
+        public void OnGoldToWithdrawChanged(string goldText)
+        {
+            if (string.IsNullOrWhiteSpace(goldText))
+                goldText = "0";
+
+            int goldToWithdraw = int.Parse(goldText);
+
+            int stashedGold = StashManager.Instance.GetStashedGold();
+
+            var effectiveGold = Mathf.Clamp(goldToWithdraw, 0, stashedGold);
+
+            withdrawGoldInput.text = effectiveGold.ToString();
+        }
+
         private void OnGoldInitialized(int gold)
         {
-            goldText.text = gold.ToString();
+            stashedGoldText.text = gold.ToString();
         }
 
         private void OnGoldUpdated(int gold)
         {
-            goldText.text = gold.ToString();
+            stashedGoldText.text = gold.ToString();
         }
 
         public void CloseStash()

@@ -15,6 +15,10 @@ using WotN.Common.Utils.EventData.Equipment;
 using WotN.UI.Inventory;
 using System.Collections.Generic;
 using UnityEditor;
+using WotN.ScriptableObjects.World;
+using UnityEngine.AI;
+using WotN.Interactables;
+using WotN.Common.Utils.GamePersistence;
 
 namespace WotN.Common.Managers
 {
@@ -23,6 +27,10 @@ namespace WotN.Common.Managers
         public const string PlayerTag = "Player";
 
         public const string RespawnTag = "Respawn";
+
+        public const string NPCSpawnAreaTag = "NPCSpawnArea";
+
+        public const string StageTerrainTag = "StageTerrain";
 
         public bool isGameStarted;
 
@@ -41,9 +49,20 @@ namespace WotN.Common.Managers
         private HeroClass[] availableHeroClasses;
 
         [SerializeField]
+        private Chapter[] chapters;
+
+        [SerializeField]
+        private ChapterStage[] chapterStages;
+
+        [SerializeField]
+        private ChapterStagePathAreaDefinition[] chapterStageAreaDefinitions;
+
+        [SerializeField]
         private PersistedCharacterData characterData;
 
         private PlayerInput playerHUDInput;
+
+        private NavMeshDataInstance currentNavMeshInstance;
 
         void Start()
         {
@@ -57,6 +76,12 @@ namespace WotN.Common.Managers
             availableItems = Resources.LoadAll<Item>("Items");
 
             availableHeroClasses = Resources.LoadAll<HeroClass>("Hero classes");
+
+            chapters = Resources.LoadAll<Chapter>("World/Chapters");
+
+            chapterStages = Resources.LoadAll<ChapterStage>("World/Chapter stages");
+
+            chapterStageAreaDefinitions = Resources.LoadAll<ChapterStagePathAreaDefinition>("World/Chapter stage areas");
 
             PlayerManager.Instance.onAvatarPanelDataUpdated += OnAvatarPanelDataUpdated;
 
@@ -86,6 +111,61 @@ namespace WotN.Common.Managers
             {
                 mainGameCanvas.enabled = true;
 
+                Transform stageTerrain = GameObject.FindGameObjectWithTag(StageTerrainTag).transform;
+
+                var currentChapter = chapters.FirstOrDefault(x => x.id == characterData.currentChapterId);
+
+                if (currentChapter == null)
+                {
+                    Debug.LogError("Cannot load chapter");
+                    yield return null;
+                }
+
+                var currentStage = currentChapter.chapterStages.FirstOrDefault(x => x.buildIndex == characterData.currentTownStageId);
+
+                if(currentStage == null)
+                {
+                    Debug.LogError("Cannot load stage");
+                    yield return null;
+                }
+
+                var generatedStagePath = characterData.generatedStagePaths.FirstOrDefault(x => x.chapterId == characterData.currentChapterId && x.stageId == characterData.currentTownStageId);
+
+                int stagePathIndex = 0;
+
+                if (generatedStagePath == null)
+                {
+                    int stagePathsCount = currentStage.chapterStagePaths.Length;
+
+                    stagePathIndex = Random.Range(0, stagePathsCount);
+
+                    var generatedStagePathData = new GeneratedStagePathData
+                    {
+                        chapterId = characterData.currentChapterId,
+                        stageId = characterData.currentTownStageId,
+                        generatedStagePathIndex = stagePathIndex
+                    };
+
+                    characterData.generatedStagePaths.Add(generatedStagePathData);
+                }
+                else
+                {
+                    stagePathIndex = generatedStagePath.generatedStagePathIndex;
+                }
+
+                var currentChapterStagePathAreas = currentStage.chapterStagePaths[stagePathIndex].chapterStagePathAreas;
+
+                for (int i = 0; i< currentChapterStagePathAreas.Length; i++)
+                {
+                    var currentChapterStagePathArea = currentChapterStagePathAreas[i];
+
+                    Instantiate(currentChapterStagePathArea.areaPrefab, currentChapterStagePathArea.position, Quaternion.identity, stageTerrain);
+                }
+
+                var path = chapters[0].chapterStages[0].chapterStagePaths[0];
+
+                currentNavMeshInstance = NavMesh.AddNavMeshData(path.navMeshData);
+
                 Vector3 spawnPos = GameObject.FindGameObjectWithTag(RespawnTag).transform.position;
 
                 GameObject player = Instantiate(
@@ -103,18 +183,47 @@ namespace WotN.Common.Managers
 
                 StashManager.Instance.InitializeStash(characterData.itemsInStash, characterData.stashedGold);
 
-                AudioManager.Instance.PlayMusicForCurrentScene(scene.buildIndex);
-                AudioManager.Instance.PlayAmbientSFXForCurrentScene(scene.buildIndex);
+                GameObject npcSpawnArea = GameObject.FindGameObjectWithTag(NPCSpawnAreaTag);
+
+                Transform[] npcSpawnPoints = npcSpawnArea.GetComponentsInChildren<Transform>();
+
+                var npcSpawnDefinitions = currentChapterStagePathAreas[0].areaDefinition.npcSpawnDefinitions;
+
+                for (int i = 0; i < npcSpawnDefinitions.Length; i++)
+                {
+                    var spawnPoint = npcSpawnPoints.FirstOrDefault(x => x.name == npcSpawnDefinitions[i].spawnPointName);
+
+                    if (spawnPoint == null)
+                    {
+                        Debug.LogError("No matching spawn point for the NPC " + npcSpawnDefinitions[i].npcPrefab.name);
+                        continue;
+                    }
+
+                    var npcInstance = Instantiate(npcSpawnDefinitions[i].npcPrefab, spawnPoint.localPosition, spawnPoint.localRotation, spawnPoint);
+
+                    if (npcInstance.TryGetComponent<NPCMovement>(out NPCMovement npcMovement))
+                    {
+                        npcMovement.SetWalkStops(spawnPoint, npcSpawnDefinitions[i].walkStops);
+                    }
+                }
 
                 isInGame = true;
 
                 playerHUDInput.enabled = true;
 
                 ControlsManager.Instance.GetCustomizableControls().Enable();
+
+                AudioManager.Instance.PlayMusicForCurrentScene(scene.buildIndex);
+                AudioManager.Instance.PlayAmbientSFXForCurrentScene(scene.buildIndex);
             }
             else
             {
                 ControlsManager.Instance.GetCustomizableControls().Disable();
+
+                if (currentNavMeshInstance.valid)
+                {
+                    NavMesh.RemoveNavMeshData(currentNavMeshInstance);
+                }
 
                 isInGame = false;
 
@@ -215,7 +324,10 @@ namespace WotN.Common.Managers
                 heroName = heroName,
                 currentExp = 0,
                 currentLevel = 1,
-                currentSceneIndex = 2,
+                currentChapterId=1,
+                currentDifficulty=1,
+                currentTownStageId = 2,
+                currentTownId=1,
                 damage = selectedHeroClass.damage,
                 defense = selectedHeroClass.defense,
                 dexterity = selectedHeroClass.dexterity,
@@ -280,7 +392,7 @@ namespace WotN.Common.Managers
                 return;
             }
 
-            LoadingScreenManager.Instance.LoadGameScene(characterData.currentSceneIndex);
+            LoadingScreenManager.Instance.LoadGameScene(characterData.currentTownStageId);
         }
 
         public TItem GetItemById<TItem>(int id) where TItem : Item

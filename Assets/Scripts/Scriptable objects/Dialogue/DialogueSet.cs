@@ -7,6 +7,10 @@ namespace WotN.ScriptableObjects.Dialogue
     {
         public int ID = -1;
 
+        public AudioClip[] sayHelloAudioClips;
+
+        public AudioClip[] greetingAudioClips;
+
         public DialogueOption[] dialogueOptions;
     }
 }

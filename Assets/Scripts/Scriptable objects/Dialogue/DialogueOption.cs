@@ -10,6 +10,8 @@ namespace WotN.ScriptableObjects.Dialogue
 
         [TextArea(1, 4)]
         public string Talk;
+
+        public AudioClip talkAudioClip;
     }
 }
 

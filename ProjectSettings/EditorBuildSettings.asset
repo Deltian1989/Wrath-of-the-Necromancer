@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Splash screen.unity
+    path: Assets/Scenes/Main menu/Splash screen.unity
     guid: abc01faef7166fd4395e4c1270e0606e
   - enabled: 1
-    path: Assets/Scenes/Main menu.unity
+    path: Assets/Scenes/Main menu/Main menu.unity
     guid: 4cebf52c3a6fba04d9e7a190c6a976f4
   - enabled: 1
-    path: Assets/Scenes/Lorencia area.unity
+    path: Assets/Scenes/Chapter 1/Lorencia stage/Lorencia stage.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

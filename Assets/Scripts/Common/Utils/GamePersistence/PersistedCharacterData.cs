@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using WotN.Common.Utils.GamePersistence;
 
 namespace WotN.Common.Utils.GamePersistance
 {
@@ -8,7 +9,15 @@ namespace WotN.Common.Utils.GamePersistance
     {
         public int heroClassID;
 
-        public int currentSceneIndex = 2;
+        public int currentChapterId = 1;
+
+        public int currentTownStageId = 2;
+
+        public int currentTownId=1;
+
+        public List<GeneratedStagePathData> generatedStagePaths = new List<GeneratedStagePathData>();
+
+        public int currentDifficulty;
 
         public int reachedDifficulty;
 

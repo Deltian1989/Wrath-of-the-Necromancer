@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 305ac40148f830244b125005067675f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f1d0330021cf3942a2e41968d3e1222, type: 3}
   m_Name: Current gold tooltip
   m_EditorClassIdentifier: 
   id: 2
   title: Current gold
-  description: 'Left click to stash some amount
-
-    Shift + left click to stash
-    all gold'

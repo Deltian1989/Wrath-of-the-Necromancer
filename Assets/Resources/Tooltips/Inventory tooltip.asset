@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f1d0330021cf3942a2e41968d3e1222, type: 3}
   m_Name: Inventory tooltip
   m_EditorClassIdentifier: 
-  id: 5
+  id: 6
   title: Inventory

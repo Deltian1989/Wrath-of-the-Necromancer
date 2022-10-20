@@ -32,6 +32,9 @@ namespace WotN.Common.Managers
         [SerializeField]
         private AudioSource uiSFXAudioSource;
 
+        [SerializeField]
+        private AudioSource speechAudioSource;
+
         void Awake()
         {
             if (Instance == null)
@@ -88,6 +91,18 @@ namespace WotN.Common.Managers
         public void PlayUISFX(AudioClip uiSFXClip)
         {
             uiSFXAudioSource.PlayOneShot(uiSFXClip);
+        }
+
+        public void PlaySpeechAudio(AudioClip speechAudioClip)
+        {
+            StopSpeechAudio();
+
+            speechAudioSource.PlayOneShot(speechAudioClip);
+        }
+
+        public void StopSpeechAudio()
+        {
+            speechAudioSource.Stop();
         }
 
         public void PlayMusicForCurrentScene(int index)

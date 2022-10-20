@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16018c2b7bbc3a4cac204a361f62394, type: 3}
+  m_Name: Sir_Mullich_DialogueSet
+  m_EditorClassIdentifier: 
+  ID: 6
+  sayHelloAudioClips:
+  - {fileID: 8300000, guid: 8f2607093d39ba445b00f7608ad55408, type: 3}
+  greetingAudioClips:
+  - {fileID: 8300000, guid: 890ba67bc0d58094db8c06a2501ec51a, type: 3}
+  - {fileID: 8300000, guid: 3f85ed1c9f358de458b1b78e361312e0, type: 3}
+  - {fileID: 8300000, guid: bbeb91a8d29c86a4e866864183b14060, type: 3}
+  dialogueOptions:
+  - DialogueOptionText: Introduction
+    Talk: Greetings, stranger. I am sir Mullich and I am main commandor of our town
+      army. I'm so happy that we can meet such noble people like you looking for
+      adventures. If you need some advices or help in fighting against evil, feel
+      free to come to us, you'll always learn something useful from our army.
+    talkAudioClip: {fileID: 8300000, guid: adf26794196115941b806fe7b260fd61, type: 3}
+  - DialogueOptionText: Gossip
+    Talk: Many of our people died fighting with powerful evil forces. But also luckily
+      we get always good recruiters in our town's army. Looking at you, I strongly
+      believe you are one of these guys who are able to defeat many of those bad
+      guys that started to occupy this land.
+    talkAudioClip: {fileID: 8300000, guid: aefb0a8ff02b25f409382194ae4ae60f, type: 3}

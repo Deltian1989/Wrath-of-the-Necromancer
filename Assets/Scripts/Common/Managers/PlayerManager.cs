@@ -171,6 +171,12 @@ namespace WotN.Common.Managers
             onInventoryDataUpdated?.Invoke(new InventoryUpdateData { currentGold = playerGold });
         }
 
+        public void AddPlayerGold(int goldToAdd)
+        {
+            playerGold += goldToAdd;
+            onInventoryDataUpdated?.Invoke(new InventoryUpdateData { currentGold = playerGold });
+        }
+
         public void SetSpawnedPlayer(GameObject player)
         {
             playerAppearance = player.GetComponent<PlayerAppearance>();
@@ -185,7 +191,7 @@ namespace WotN.Common.Managers
 
             difficulty = characterData.reachedDifficulty;
 
-            currentSceneIndex = characterData.currentSceneIndex;
+            currentSceneIndex = characterData.currentTownStageId;
             heroClass = characterData.heroClass;
             heroLevel = characterData.currentLevel;
             currentExp = characterData.currentExp;

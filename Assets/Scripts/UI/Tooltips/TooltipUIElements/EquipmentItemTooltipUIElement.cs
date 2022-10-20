@@ -10,7 +10,7 @@ namespace WotN.UI.Tooltips.TooltipUIElements
     public class EquipmentItemTooltipUIElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         [SerializeField]
-        protected float tooltipHorizontalOffset = 0;
+        private float tooltipHorizontalOffset = 0;
 
         private EquipmentSlot equipmentSlot;
 
@@ -65,9 +65,9 @@ namespace WotN.UI.Tooltips.TooltipUIElements
             if (StashManager.Instance.IsStashOpened)
                 displayMode = DisplayMode.EquipmentToStash;
             else
-                displayMode = equipmentSlot.GetDisplayMode();
+                displayMode = DisplayMode.Equipment;
 
-            TooltipManager.Instance.DisplayTooltipForItem(transform.position, tooltipHorizontalOffset,  equipmentItem, displayMode);
+            TooltipManager.Instance.DisplayTooltipForItem(transform.position, tooltipHorizontalOffset, equipmentItem, displayMode, UIElementType.EquipmentItem);
 
             CursorManager.Instance.SetCursor(CursorManager.Instance.UnequipItemCursorTexture);
         }

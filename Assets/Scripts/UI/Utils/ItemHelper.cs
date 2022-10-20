@@ -12,19 +12,19 @@ namespace WotN.UI.Utils
 
         private static StringBuilder sb = new StringBuilder();
 
-        public static string GenerateItemDescription(Item item, DisplayMode displayMode)
+        public static string GenerateItemDescription(Item item)
         {
             switch (item)
             {
                 case ItemEquipment:
-                    return SetTooltipDescription((ItemEquipment)item, displayMode);
-                default:
-                        return "An item";
+                    return SetTooltipDescription((ItemEquipment)item);
+                default: 
+                    return "Restores some HP/MP";
                     
             }
         }
 
-        private static string SetTooltipDescription(ItemEquipment item, DisplayMode displayMode)
+        private static string SetTooltipDescription(ItemEquipment item)
         {
             if (sb.Length > 0)
             {
@@ -167,6 +167,13 @@ namespace WotN.UI.Utils
             Equipment,
             EquipmentToStash,
             Stash
+        }
+
+        public enum UIElementType
+        {
+            NormalItem,
+            EquipmentItem,
+            PlayerGold
         }
 
         private enum StatType

@@ -42,6 +42,11 @@ namespace WotN.Common.Managers
                 Instance = this;
         }
 
+        public int GetStashedGold()
+        {
+            return stashedGold;
+        }
+
         public void AddItemToStash(ItemStack itemStack)
         {
             if (stashedItems.Count >= space)
@@ -89,6 +94,13 @@ namespace WotN.Common.Managers
             onInitializedGold?.Invoke(gold);
 
             onItemsUpdated?.Invoke(stashedItems);
+        }
+
+        public void SetStashedGold(int gold)
+        {
+            stashedGold = gold;
+
+            onStashedGold?.Invoke(stashedGold);
         }
 
         public void StashGold(int goldToStash)

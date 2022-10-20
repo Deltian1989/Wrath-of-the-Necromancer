@@ -92,8 +92,10 @@ namespace WotN.UI.Inventory
                 itemStack.item.Use();
 
                 AudioManager.Instance.PlayUISFX(itemStack.item.useSFX);
-
-                InventoryManager.Instance.DecreaseStack(itemStack, 1);
+                if (displayMode == DisplayMode.Inventory)
+                    InventoryManager.Instance.DecreaseStack(itemStack, 1);
+                else if (displayMode == DisplayMode.Stash)
+                    StashManager.Instance.RemoveItemFromStash(itemStack);
             }
 
             itemTooltipUIElement.ResetTooltip(itemStack);

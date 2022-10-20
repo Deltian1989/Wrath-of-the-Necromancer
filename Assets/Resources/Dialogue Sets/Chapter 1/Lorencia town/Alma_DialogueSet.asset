@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16018c2b7bbc3a4cac204a361f62394, type: 3}
+  m_Name: Alma_DialogueSet
+  m_EditorClassIdentifier: 
+  ID: 2
+  sayHelloAudioClips:
+  - {fileID: 8300000, guid: bb85c8fe3691d00459054924efebe999, type: 3}
+  - {fileID: 8300000, guid: ac7c797c8ccfcb8498302935098832f1, type: 3}
+  greetingAudioClips:
+  - {fileID: 8300000, guid: 17eaf0d3e0e661d41b538cbbb40496ba, type: 3}
+  - {fileID: 8300000, guid: b2bab4949c54f1d4e9238ab733993dd2, type: 3}
+  - {fileID: 8300000, guid: 11a3b3c2e3fb5614897f085eeaf8f2fd, type: 3}
+  dialogueOptions:
+  - DialogueOptionText: Introduction
+    Talk: Hello. I am Alma and I am wife of the mayor of this town, Henry. You must
+      look like a brave and good person, such people like you are always really welcome.
+      If you get into any of troubles or need any advice from us, please always come
+      to us, we are always really pleased to help people who want to fight with us
+      against our enemies.
+    talkAudioClip: {fileID: 8300000, guid: 333d49227364ba24792f4a4bd4c4b201, type: 3}
+  - DialogueOptionText: Gossip
+    Talk: People living here in this town are always really nice to strange people
+      asking for staying here the night or looking for help in their lives. The tavern
+      'Under the Wild Boar' in this town is the great place for them to meet guest
+      guys and even make new friends.
+    talkAudioClip: {fileID: 8300000, guid: 71e2f55a065681145ad8755cedfc3fb5, type: 3}

@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdfd7dfe0c986084b8f207e96e0cc7cc, type: 3}
+  m_Name: Lorencia town
+  m_EditorClassIdentifier: 
+  id: 1
+  areaName: Lorencia town
+  isSafeArea: 1
+  npcSpawnDefinitions:
+  - npcPrefab: {fileID: 194510, guid: f40266d474cc8b843834adde5968422c, type: 3}
+    spawnPointName: TownResident2SpawnPoint
+    walkStops:
+    - {x: 0, y: 0, z: 0}
+    - {x: 6, y: 0, z: 5}
+    - {x: 6, y: 0, z: -2}
+  - npcPrefab: {fileID: 108664, guid: 05ac624f34289124e9dd7de3fdd678e2, type: 3}
+    spawnPointName: TownResidentWomanSpawnPoint
+    walkStops:
+    - {x: 0, y: 0, z: 0}
+    - {x: -6, y: 0, z: 0}
+    - {x: -6, y: 0, z: -5}
+  - npcPrefab: {fileID: 173204, guid: e007a802f4d3acc46ba430cb2dbc2651, type: 3}
+    spawnPointName: MayorsSpouseSpawnPoint
+    walkStops:
+    - {x: 0, y: 0, z: 0}
+    - {x: -6, y: 0, z: 0}
+    - {x: -6, y: 0, z: -5}
+  - npcPrefab: {fileID: 110800, guid: 35d235cff0787354b90645d955b28224, type: 3}
+    spawnPointName: TownResident1SpawnPoint
+    walkStops:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 9}
+    - {x: 4, y: 0, z: 9}
+  - npcPrefab: {fileID: 2830035615620536184, guid: e131d8d4bda48e84c99dfd6fdcec9b70, type: 3}
+    spawnPointName: BlacksmithSpawnPoint
+    walkStops:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: -1}
+    - {x: -2, y: 0, z: -1}
+  - npcPrefab: {fileID: 8596651671491129292, guid: 920b6f0757263444597ecf8481f455fb, type: 3}
+    spawnPointName: MageMerchantSpawnPoint
+    walkStops:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3, y: 0, z: 0}
+    - {x: 0, y: 0, z: -2}
+  - npcPrefab: {fileID: 4171967677167792176, guid: 4408f3e46e234ab429c39cc371a64785, type: 3}
+    spawnPointName: MayorSpawnPoint
+    walkStops:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 3}
+    - {x: 4, y: 0, z: 0}
+  - npcPrefab: {fileID: 3659594796033334721, guid: b3d47b4ad8ed33340a49d3d85b610e3b, type: 3}
+    spawnPointName: Solder1SpawnPoint
+    walkStops:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2, y: 0, z: 0}
+    - {x: 0, y: 0, z: -2}
+  - npcPrefab: {fileID: 3698195810204732871, guid: b8f890c116942f4498099c54a3935d09, type: 3}
+    spawnPointName: Solder2SpawnPoint
+    walkStops:
+    - {x: 0, y: 0, z: 0}
+    - {x: -3, y: 0, z: 0}
+    - {x: 0, y: 0, z: -2}
+  - npcPrefab: {fileID: 6684633443352563828, guid: 1d9a6bbb34d7d4b448a54c889ae5fc32, type: 3}
+    spawnPointName: Knight1SpawnPoint
+    walkStops:
+    - {x: 0, y: 0, z: 0}
+    - {x: 3, y: 0, z: 0}
+    - {x: 0, y: 0, z: -2}
+  - npcPrefab: {fileID: 7081123156825883877, guid: 7db44620b2e0da64fae609382ecdc5a1, type: 3}
+    spawnPointName: Knight2SpawnPoint
+    walkStops:
+    - {x: 0, y: 0, z: 0}
+    - {x: -2, y: 0, z: 0}
+    - {x: 0, y: 0, z: -1}
+  - npcPrefab: {fileID: 435617915919959247, guid: e917fab2df04f8642b5ac1cf7603c5dd, type: 3}
+    spawnPointName: KnightCommandorSpawnPoint
+    walkStops:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 4}
+    - {x: 4, y: 0, z: 4}
+  - npcPrefab: {fileID: 4837413968990071531, guid: c00ebf212c79c664ea0e464dc405bf50, type: 3}
+    spawnPointName: Guard1SpawnPoint
+    walkStops: []
+  - npcPrefab: {fileID: 4837413968990071531, guid: c00ebf212c79c664ea0e464dc405bf50, type: 3}
+    spawnPointName: Guard2SpawnPoint
+    walkStops: []
+  - npcPrefab: {fileID: 4837413968990071531, guid: c00ebf212c79c664ea0e464dc405bf50, type: 3}
+    spawnPointName: Guard3SpawnPoint
+    walkStops: []
+  - npcPrefab: {fileID: 4837413968990071531, guid: c00ebf212c79c664ea0e464dc405bf50, type: 3}
+    spawnPointName: Guard4SpawnPoint
+    walkStops: []
+  - npcPrefab: {fileID: 4837413968990071531, guid: c00ebf212c79c664ea0e464dc405bf50, type: 3}
+    spawnPointName: Guard5SpawnPoint
+    walkStops: []
+  - npcPrefab: {fileID: 4837413968990071531, guid: c00ebf212c79c664ea0e464dc405bf50, type: 3}
+    spawnPointName: Guard6SpawnPoint
+    walkStops: []

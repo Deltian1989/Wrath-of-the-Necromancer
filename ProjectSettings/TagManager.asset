@@ -10,6 +10,8 @@ TagManager:
   - Stone
   - Grass
   - MinimapItemsArea
+  - StageTerrain
+  - NPCSpawnArea
   layers:
   - Default
   - TransparentFX
