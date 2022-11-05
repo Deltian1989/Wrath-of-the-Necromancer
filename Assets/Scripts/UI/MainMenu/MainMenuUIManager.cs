@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using WotN.Common.Managers;
 
@@ -6,27 +7,35 @@ namespace WotN.UI.MainMenu
     public class MainMenuUIManager : MonoBehaviour
     {
         [SerializeField]
+        [AssetsOnly]
         private AudioClip musicClip;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject startGameText;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject mainMenu;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private CanvasGroup mainMenuCG;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private CanvasGroup heroListCG;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private CanvasGroup creditsCG;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private CanvasGroup optionsCG;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private CanvasGroup createHeroCG;
 
         private int selectedDifficulty;

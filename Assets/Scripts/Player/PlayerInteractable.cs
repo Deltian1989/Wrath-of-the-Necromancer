@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -11,9 +12,11 @@ namespace WotN.Player
     public class PlayerInteractable : MonoBehaviour
     {
         [SerializeField]
+        [SceneObjectsOnly]
         private PropInteractableBase focusedPropInteractable;
 
         [SerializeField]
+        [SceneObjectsOnly]
         private PropInteractableBase highlightedPropInteractable;
 
         private Camera cam;

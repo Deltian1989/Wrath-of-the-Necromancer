@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,8 +10,11 @@ namespace WotN.Common.Managers
     public class LoadingScreenManager : GenericSingleton<LoadingScreenManager>
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Canvas loadingCanvas;
+
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Image loadingProgressImage;
 
         private AsyncOperation asyncLoad = null;

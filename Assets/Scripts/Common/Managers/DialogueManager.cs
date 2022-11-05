@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using WotN.UI.Dialogue;
+using Sirenix.OdinInspector;
 
 namespace WotN.Common.Managers
 {

@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using WotN.Common.Managers;
 using WotN.Player;
@@ -8,12 +9,15 @@ namespace WotN.Interactables
     public abstract class PropInteractableBase : MonoBehaviour
     {
         [SerializeField]
+        [SceneObjectsOnly]
         protected PlayerInteractable focusedPlayer;
 
         [SerializeField]
+        [SceneObjectsOnly]
         protected PlayerMovement focusedPlayerMovement;
 
         [SerializeField]
+        [AssetsOnly]
         protected Texture2D hoverCursorTexture;
 
         protected Outline outline;

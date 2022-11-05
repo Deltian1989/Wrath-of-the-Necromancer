@@ -3,6 +3,7 @@ using UnityEngine;
 using WotN.Common.Utils;
 using WotN.Common.Managers;
 using WotN.Common.Utils.GamePersistance;
+using Sirenix.OdinInspector;
 
 namespace WotN.UI.MainMenu.HeroList
 {
@@ -12,23 +13,31 @@ namespace WotN.UI.MainMenu.HeroList
 
         [Header("Armor slots")]
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject head;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject chest;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject pants;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject boots;
 
         [Header("Weapon rest slots")]
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Transform twoHandedWeaponRestSlot;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Transform oneHandWeaponRestSlot;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Transform shieldRestSlot;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject[] armorPieces;
 
         public void ShowEquipmentParts(SavedEquippmentItemData[] equippedItems)

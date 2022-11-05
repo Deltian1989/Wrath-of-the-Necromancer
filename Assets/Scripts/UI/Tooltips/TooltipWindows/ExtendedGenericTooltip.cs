@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +9,7 @@ namespace WotN.UI.Tooltips.TooltipWindows
     public class ExtendedGenericTooltip : TooltipBase
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private TMP_Text descriptionText;
 
         private RectTransform descriptionRect;

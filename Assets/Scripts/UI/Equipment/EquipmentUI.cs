@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using WotN.Common.Managers;
 using WotN.Common.Utils;
 using WotN.Common.Utils.EventData.Equipment;
+using Sirenix.OdinInspector;
 
 namespace WotN.UI.Equipment
 {
@@ -12,28 +13,38 @@ namespace WotN.UI.Equipment
     {
         [Header("Hero header")]
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text heroNickname;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text heroHeader;
 
         [Header("Hero stats")]
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text HP;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text MP;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text resist;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text attack;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text armor;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text magicPower;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private RawImage heroSillhoute;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Transform inventoryParent;
 
         private EquipmentSlot[] equipmentSlots;

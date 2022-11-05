@@ -1,4 +1,5 @@
 using AutoLayout3D;
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,38 +14,49 @@ namespace WotN.UI.MainMenu.HeroList
     {
         [Header("Hero list areas")]
         [SerializeField]
+        [ChildGameObjectsOnly]
         private CanvasGroup heroListCG;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private CanvasGroup createHeroCG;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private CanvasGroup newHeroWindowCG;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private CanvasGroup difficultySelectionWindowCG;
 
         [Header("Hero list buttons")]
+        [ChildGameObjectsOnly]
         [SerializeField]
         private Button deleteButton;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private CanvasGroup deleteHeroWindow;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Button continueButton;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Button[] difficultyButtons;
 
         [Header("Hero list settings")]
         [SerializeField]
+        [AssetsOnly]
         private LoadedCharacterCell loadedCharacterCellPrefab;
 
         [SerializeField]
+        [AssetsOnly]
         private CharacterMinatureRenderer characterMinatureRendererPrefab;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject heroListContent;
 
         [SerializeField]

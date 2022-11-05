@@ -2,6 +2,7 @@ using WotN.ScriptableObjects.Dialogue;
 using TMPro;
 using UnityEngine;
 using WotN.Common.Managers;
+using Sirenix.OdinInspector;
 
 namespace WotN.Interactables
 {
@@ -16,6 +17,7 @@ namespace WotN.Interactables
         private string npcName;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Transform npcNameSpot;
 
         private Outline outline;

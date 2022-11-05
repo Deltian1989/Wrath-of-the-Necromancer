@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -10,9 +11,11 @@ using WotN.UI.Utils;
 public class PlayerNPCInteractable : MonoBehaviour
 {
     [SerializeField]
+    [SceneObjectsOnly]
     private NPCInteractable highlightedNPC;
 
     [SerializeField]
+    [SceneObjectsOnly]
     private NPCInteractable focusedNPC;
 
     private bool isTalking;

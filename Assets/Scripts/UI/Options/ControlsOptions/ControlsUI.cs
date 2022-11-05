@@ -4,21 +4,26 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using WotN.Common.Managers;
+using Sirenix.OdinInspector;
 
 namespace WotN.UI.Options.Controls
 {
     public class ControlsUI : MonoBehaviour
     {
         [SerializeField]
+        [AssetsOnly]
         private KeyBindingEntry keyBindingEntryPrefab;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Transform scrollViewContent;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Button resetButton;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private List<KeyBindingEntry> keyBindings;
 
         void Start()

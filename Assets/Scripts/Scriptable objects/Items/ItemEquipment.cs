@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using WotN.Common.Managers;
 using WotN.UI.Equipment;
 
@@ -15,6 +16,7 @@ namespace WotN.ScriptableObjects.Items
             WeaponLeftHand
         }
 
+        [EnumToggleButtons]
         public EquipmentSlot equipmentSlot;
 
         public override void Use()

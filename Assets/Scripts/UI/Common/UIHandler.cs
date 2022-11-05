@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 using WotN.Common.Managers;
@@ -10,29 +11,38 @@ namespace WotN.UI.Common
     {
         [Header("Avatar fields")]
         [SerializeField]
+        [ChildGameObjectsOnly]
+        private GameObject avatarPanel;
+        [SerializeField]
+        [ChildGameObjectsOnly]
         private RawImage avatarHeroPortrait;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text avatarLevelIcon;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text avatarName;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Image hpLine;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Image mpLine;
 
         [Header("Skills panel")]
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Image staminaBar;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Image expBar;
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text levelIcon;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject stashWindow;
-
-        [SerializeField]
-        private GameObject avatarPanel;
 
         private PauseManager pauseManager;
 

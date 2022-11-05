@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 using WotN.Common.Managers;
@@ -7,12 +8,15 @@ namespace WotN.UI.MainMenu.NewHero
     public class NewHeroUI : MonoBehaviour
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private CanvasGroup createHeroCG;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private CanvasGroup newHeroWindowCG;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private InputField heroNameInputField;
 
         public void StartNewGame()

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Sirenix.OdinInspector;
+using System.Collections;
 using UnityEngine;
 
 namespace WotN.Minimap
@@ -6,9 +7,11 @@ namespace WotN.Minimap
     public class MinimapItemWithCaption : MinimapItem
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private TMPro.TMP_Text minimapItemCaption;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Canvas minimapItemCaptionCanvas;
 
         void Start()

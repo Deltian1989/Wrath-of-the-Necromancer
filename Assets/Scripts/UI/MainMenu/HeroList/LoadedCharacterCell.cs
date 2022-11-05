@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 using WotN.Common.Managers;
@@ -8,12 +9,15 @@ namespace WotN.UI.MainMenu.HeroList
     public class LoadedCharacterCell : MonoBehaviour
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text heroName;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text heroLevel;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text heroClass;
 
         [SerializeField]

@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,21 +17,27 @@ namespace WotN.Common.Managers
         public Texture2D UnequipItemCursorTexture => unequipItemCursorTexture;
 
         [SerializeField]
+        [AssetsOnly]
         private Texture2D equipItemCursorTexture;
 
         [SerializeField]
+        [AssetsOnly]
         private Texture2D unequipItemCursorTexture;
 
         [SerializeField]
+        [AssetsOnly]
         private Texture2D drinkPotionCursorTexture;
 
         [SerializeField]
+        [AssetsOnly]
         private Texture2D talkCursorTexture;
 
         [SerializeField]
+        [AssetsOnly]
         private Texture2D setDestinationCursorTexture;
 
         [SerializeField]
+        [AssetsOnly]
         private Texture2D defaultCursorIcon;
 
         void Awake()

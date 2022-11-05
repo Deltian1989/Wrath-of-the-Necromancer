@@ -8,6 +8,7 @@ using WotN.Common.Utils.EventData.AvatarPanel;
 using WotN.Common.Utils.EventData.Inventory;
 using WotN.Common.Utils.EventData.Equipment;
 using WotN.Interactables;
+using Sirenix.OdinInspector;
 
 namespace WotN.Common.Managers
 {
@@ -45,89 +46,115 @@ namespace WotN.Common.Managers
 
         public LayerMask WalkableLayers => walkableLayers;
 
-        [Header("Basic hero data")]
+        [BoxGroup("Basic hero data")]
         [SerializeField]
         private string heroName;
+        [BoxGroup("Basic hero data")]
         [SerializeField]
         private string heroClass;
 
+        [BoxGroup("Current gameplay data")]
         [SerializeField]
+        [MinValue(0)]
+        [MaxValue(2)]
         private int difficulty;
-
+        [BoxGroup("Current gameplay data")]
         [SerializeField]
+        [MinValue(0)]
         private int currentSceneIndex;
 
+        [BoxGroup("Gold data")]
         [SerializeField]
+        private int maxGoldToOwn=10000;
+        [BoxGroup("Gold data")]
+        [SerializeField]
+        [MinValue(0)]
+        [MaxValue("maxGoldToOwn")]
         private int playerGold;
 
-        [Header("Hero level & exp")]
+        [TabGroup("Player Stats", "Hero level & exp")]
         [SerializeField]
         private int heroLevel;
+        [TabGroup("Player Stats", "Hero level & exp")]
         [SerializeField]
         private int currentExp;
-
-        [Header("Level & exp settings")]
+        [TabGroup("Player Stats", "Hero level & exp")]
         [SerializeField]
         private int[] availableLevels = new int[100];
+        [TabGroup("Player Stats", "Hero level & exp")]
         [SerializeField]
         private int baseExp = 1000;
+        [TabGroup("Player Stats", "Hero level & exp")]
         [SerializeField]
         private float expMultiplier = 1.1f;
 
-        [Header("Primary skills")]
+        [TabGroup("Player Stats", "Primary skills")]
         [SerializeField]
         private int strength;
+        [TabGroup("Player Stats", "Primary skills")]
         [SerializeField]
         private int dexterity;
+        [TabGroup("Player Stats", "Primary skills")]
         [SerializeField]
         private int magic;
+        [TabGroup("Player Stats", "Primary skills")]
         [SerializeField]
         private int vitality;
+        [TabGroup("Player Stats", "Primary skills")]
         [SerializeField]
         private int energy;
 
-        [Header("Effective stats")]
+        [TabGroup("Player Stats", "Effective stats")]
         [SerializeField]
         private int damage;
+        [TabGroup("Player Stats", "Effective stats")]
         [SerializeField]
         private int defense;
+        [TabGroup("Player Stats", "Effective stats")]
         [SerializeField]
         private int magicPower;
+        [TabGroup("Player Stats", "Effective stats")]
         [SerializeField]
         private int magicResist;
+        [TabGroup("Player Stats", "Effective stats")]
         [SerializeField]
         private int maxHP;
+        [TabGroup("Player Stats", "Effective stats")]
         [SerializeField]
         private int remainingHP;
+        [TabGroup("Player Stats", "Effective stats")]
         [SerializeField]
         private int maxMP;
+        [TabGroup("Player Stats", "Effective stats")]
         [SerializeField]
         private int remainingMP;
+        [TabGroup("Player Stats", "Effective stats")]
         [SerializeField]
         private int maxStamina;
+        [TabGroup("Player Stats", "Effective stats")]
         [SerializeField]
         private int remianingStamina;
 
-        [Header("Movement settings")]
+        [TabGroup("Movement & interaction settings", "Movement settings")]
         [SerializeField]
         private int destinationSettingDistance = 1000;
-
+        [TabGroup("Movement & interaction settings", "Movement settings")]
         [SerializeField]
         private LayerMask walkableLayers;
 
-        [Header("Interaction settings")]
+        [TabGroup("Movement & interaction settings", "Interaction settings")]
         [SerializeField]
         private int highlightDistance = 1000;
-
+        [TabGroup("Movement & interaction settings","Interaction settings")]
         [SerializeField]
         private LayerMask interactableLayers;
-
+        [TabGroup("Movement & interaction settings", "Interaction settings")]
         [SerializeField]
         private LayerMask npcInteractableLayers;
-
+        [TabGroup("Movement & interaction settings", "Interaction settings")]
         [SerializeField]
         private float rotateTime = 4;
-
+        [TabGroup("Movement & interaction settings", "Interaction settings")]
         [SerializeField]
         private float minDistanceFromNPCToInteract = 2f;
 

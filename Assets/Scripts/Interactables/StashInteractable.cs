@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using WotN.Common.Managers;
 using WotN.Player;
@@ -9,14 +10,17 @@ namespace WotN.Interactables
         private readonly string openParameter = "open";
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Collider stashOpenTriggerSpot;
 
         [SerializeField]
         private float rotateTime = 6f;
 
         [SerializeField]
+        [AssetsOnly]
         private AudioClip openChestClip;
 
+        [AssetsOnly]
         [SerializeField]
         private AudioClip closeChestClip;
 

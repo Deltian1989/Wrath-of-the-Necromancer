@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace WotN.Player
@@ -11,15 +12,19 @@ namespace WotN.Player
         private const string DefaultMaskName = "Default";
 
         [SerializeField]
+        [AssetsOnly]
         private AudioClip[] footstepSoundsOnGrass;
 
         [SerializeField]
+        [AssetsOnly]
         private AudioClip[] footstepsSoundsOnCobblestone;
 
         [SerializeField]
+        [AssetsOnly]
         private AudioClip[] footstepsSoundsOnDirtPathway;
 
         [SerializeField]
+        [AssetsOnly]
         private AudioClip[] footstepsSoundsOnStonePathway;
 
         private AudioSource audioSource;

@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace WotN.Common.Managers
@@ -8,31 +9,40 @@ namespace WotN.Common.Managers
 
         [Header("UI SFX")]
         [SerializeField]
+        [AssetsOnly]
         private AudioClip hoverOverButtonSFX;
 
         [SerializeField]
+        [AssetsOnly]
         private AudioClip clickButtonSFX;
 
         [SerializeField]
+        [AssetsOnly]
         private AudioClip pauseSFX;
 
         [SerializeField]
+        [AssetsOnly]
         private AudioClip[] musicClips;
 
         [SerializeField]
+        [AssetsOnly]
         private AudioClip[] ambientSFXClips;
 
         [Header("Audio sources")]
         [SerializeField]
+        [ChildGameObjectsOnly]
         private AudioSource ambientSFXSource;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private AudioSource musicAudioSource;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private AudioSource uiSFXAudioSource;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private AudioSource speechAudioSource;
 
         void Awake()

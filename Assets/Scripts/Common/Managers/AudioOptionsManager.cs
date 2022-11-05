@@ -6,6 +6,12 @@ namespace WotN.Common.Managers
     {
         public static AudioOptionsManager Instance { get; private set; }
 
+        private const string currentMasterVolumeKeyName = "currentMasterVolume";
+        private const string currentSFXVolumeKeyName = "currentSFXVolume";
+        private const string currentUIVolumeKeyName = "currentUIVolume";
+        private const string currentNPCSpeechVolumeKeyName = "currentNPCSpeechVolume";
+        private const string currentAmbientVolumeKeyName = "currentAmbientVolume";
+        private const string currentMusicVolumeKeyName = "currentMusicVolume";
         public float CurrentMasterVolume { get; set; }
 
         public float CurrentSFXVolume { get; set; }
@@ -29,13 +35,6 @@ namespace WotN.Common.Managers
         private float defaultAmbientVolume;
 
         private float defaultMusicVolume;
-
-        private const string currentMasterVolumeKeyName = "currentMasterVolume";
-        private const string currentSFXVolumeKeyName = "currentSFXVolume";
-        private const string currentUIVolumeKeyName = "currentUIVolume";
-        private const string currentNPCSpeechVolumeKeyName = "currentNPCSpeechVolume";
-        private const string currentAmbientVolumeKeyName = "currentAmbientVolume";
-        private const string currentMusicVolumeKeyName = "currentMusicVolume";
 
         void Awake()
         {

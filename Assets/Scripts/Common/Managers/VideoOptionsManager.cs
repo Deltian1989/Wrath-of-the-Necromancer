@@ -8,6 +8,10 @@ namespace WotN.Common.Managers
     {
         public static VideoOptionsManager Instance { get; private set; }
 
+        private const string currentScreenResolutionIndexKeyName = "currentScreenResolutionIndex";
+        private const string currentGraphicsTierKeyName = "currentGraphicsTier";
+        private const string currentFullScreenIndexKeyName = "currentFullScreenIndex";
+
         private Resolution[] availableScreenResolutions;
 
         private Dictionary<GraphicsTier, string> availableGraphicsTiers;
@@ -23,10 +27,6 @@ namespace WotN.Common.Managers
         private int defaultGraphicsTierIndex;
 
         private int defaultFullScreenIndex = 1;
-
-        private const string currentScreenResolutionIndexKeyName = "currentScreenResolutionIndex";
-        private const string currentGraphicsTierKeyName = "currentGraphicsTier";
-        private const string currentFullScreenIndexKeyName = "currentFullScreenIndex";
 
         void Awake()
         {

@@ -18581,7 +18581,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 2047
 --- !u!114 &1284115830691659617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18594,6 +18594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13ef5d02147fe014d9d7e9d0df6017d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  avatarPanel: {fileID: 1284115831047541894}
   avatarHeroPortrait: {fileID: 1284115829389852288}
   avatarLevelIcon: {fileID: 1284115829094765582}
   avatarName: {fileID: 1284115829332657334}
@@ -18603,7 +18604,6 @@ MonoBehaviour:
   expBar: {fileID: 1284115830514095449}
   levelIcon: {fileID: 1284115830868144206}
   stashWindow: {fileID: 7333396950277083091}
-  avatarPanel: {fileID: 1284115831047541894}
 --- !u!114 &5311728880080062202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27517,11 +27517,6 @@ MonoBehaviour:
   itemTooltip: {fileID: 1284115830117374056}
   genericTooltip: {fileID: 3991904291505703315}
   extendedGenericTooltip: {fileID: 6273446085901881933}
-  stashShortcutKeyIds: 0800000009000000
-  inventoryShortcutKeyIds: 0400000005000000
-  inventoryToStashShortcutKeyIds: 0700000006000000
-  equipmentShortcutKeyIds: 00000000
-  equipmentToStashShortcutKeyIds: 
 --- !u!1 &3455597900830688145
 GameObject:
   m_ObjectHideFlags: 0
@@ -32240,6 +32235,7 @@ MonoBehaviour:
   heroClass: 
   difficulty: 0
   currentSceneIndex: 2
+  maxGoldToOwn: 999999999
   playerGold: 0
   heroLevel: 1
   currentExp: 0

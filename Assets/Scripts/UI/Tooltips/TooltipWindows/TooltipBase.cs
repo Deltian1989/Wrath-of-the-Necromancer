@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,15 +8,19 @@ namespace WotN.UI.Tooltips.TooltipWindows
     public abstract class TooltipBase : MonoBehaviour
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         protected RectTransform background;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         protected TMP_Text title;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         protected Transform rightArrow;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         protected Transform leftArrow;
 
         [SerializeField]

@@ -16,6 +16,7 @@ MonoBehaviour:
   className: Necromancer
   heroClassDescription: Necromancer is good in bone and poison spells, cureses and
     reviving undead
+  characterPrefab: {fileID: 3273559007628388860, guid: 170b544cf177d1349ad1048e7b18a4a4, type: 3}
   heroPortrait: {fileID: 2800000, guid: 9109c499069c86446b537c5aa33fccbf, type: 3}
   heroSillhoute: {fileID: 2800000, guid: 4104ac6b51a4900419940c4375dc0f77, type: 3}
   strength: 25
@@ -30,37 +31,16 @@ MonoBehaviour:
   HP: 50
   MP: 30
   stamina: 100
-  startGold: 100
-  equippedItemsAtStart:
+  initialEquippedItems:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 11400000, guid: 70a5c0c3371e20740ab4fc80cfa09298, type: 2}
   - {fileID: 11400000, guid: b8f0b75be7a01584f965fbd65b78a455, type: 2}
-  inventoryItemsAtStart:
+  initialInventoryItems:
   - item: {fileID: 11400000, guid: 83976b75cb04bf043b1588975d5f7591, type: 2}
-    count: 3
+    count: 4
   - item: {fileID: 11400000, guid: b03aa37b54b300d4aa5b15616652b678, type: 2}
-    count: 2
-  - item: {fileID: 11400000, guid: d0319bd91ec3bbe46aefc96d1631e09a, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: bee4ba220073c4b47b812ed7561a5545, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 1c1b5c95acd85e844915923bebfdb558, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 9f7f3c95a9c62174a8d0404f4da897a0, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 91f7ff86407623b43b382ce733cc839e, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 40b41af6be9dc6948b052514fe6f744e, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 1fc11ae3976b32041aaba1dfb5d90458, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 56c8ceff8412f73498f77978da89af08, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 7ada03690782c814da08c53f93e68656, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 188f326c9bbde774db0952cebe14b8b1, type: 2}
-    count: 1
-  characterPrefab: {fileID: 2872075942356426115, guid: 170b544cf177d1349ad1048e7b18a4a4, type: 3}
+    count: 4
+  startGold: 100

@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,15 +10,19 @@ namespace WotN.UI.Inventory
     public class InventoryUI : MonoBehaviour
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text playerGold;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject inventoryButton;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Transform inventoryParent;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Scrollbar scrollbar;
 
         [SerializeField]

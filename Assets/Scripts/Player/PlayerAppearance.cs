@@ -1,35 +1,65 @@
 using WotN.ScriptableObjects.Items;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 namespace WotN.Player
 {
     public class PlayerAppearance : MonoBehaviour
     {
-        [Header("Armor slots")]
+        [BoxGroup("Armor slots")]
+        [HorizontalGroup("Armor slots/Horizontal")]
+        [VerticalGroup("Armor slots/Horizontal/left"), LabelWidth(50)]
+        [PreviewField(150)]
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject head;
+
+        [VerticalGroup("Armor slots/Horizontal/left"), LabelWidth(50)]
         [SerializeField]
+        [PreviewField(150)]
+        [ChildGameObjectsOnly]
         private GameObject chest;
+
         [SerializeField]
+        [VerticalGroup("Armor slots/Horizontal/right"), LabelWidth(50)]
+        [PreviewField(150)]
+        [ChildGameObjectsOnly]
         private GameObject pants;
+
         [SerializeField]
+        [ChildGameObjectsOnly]
+        [PreviewField(150)]
+        [VerticalGroup("Armor slots/Horizontal/right"), LabelWidth(50)]
         private GameObject boots;
 
-        [Header("Weapon rest slots")]
+        [BoxGroup("Weapon rest slots")]
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Transform twoHandedWeaponRestSlot;
+        [BoxGroup("Weapon rest slots")]
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Transform oneHandWeaponRestSlot;
+        [BoxGroup("Weapon rest slots")]
         [SerializeField]
+        [ChildGameObjectsOnly()]
         private Transform shieldRestSlot;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
+        [PreviewField(150, ObjectFieldAlignment.Center)]
         private GameObject[] armorPieces;
 
-        [Header("Equipped weapons")]
+        [BoxGroup("Equipped weapons")]
         [SerializeField]
+        [ChildGameObjectsOnly]
+        [HorizontalGroup("Equipped weapons/Horizontal"), LabelWidth(100)]
+        [PreviewField(150)]
         private GameObject equippedWeapon;
+        [HorizontalGroup("Equipped weapons/Horizontal"), LabelWidth(100)]
         [SerializeField]
+        [ChildGameObjectsOnly]
+        [PreviewField(150)]
         private GameObject equippedShield;
 
         public void ShowBodyPart(ItemEquipment.EquipmentSlot itemEquipmentSlot)

@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using WotN.Common.Managers;
@@ -8,12 +9,15 @@ namespace WotN.UI.Common
     {
         [Header("Hero menu elements")]
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject heroMenuContents;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject[] menuWindows;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private RectTransform[] menuButtons;
 
         [SerializeField]

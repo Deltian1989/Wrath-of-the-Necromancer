@@ -4,6 +4,7 @@ using WotN.ScriptableObjects.Items;
 using WotN.Common.Managers;
 using WotN.UI.Tooltips.TooltipUIElements;
 using static WotN.UI.Utils.ItemHelper;
+using Sirenix.OdinInspector;
 
 namespace WotN.UI.Equipment
 {
@@ -13,9 +14,11 @@ namespace WotN.UI.Equipment
         private ItemEquipment equippedItem;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Image itemIcon;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Button button;
 
         [SerializeField]

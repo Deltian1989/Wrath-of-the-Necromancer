@@ -310,7 +310,6 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -353,7 +352,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2047
 --- !u!114 &4734954252132054660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,7 +367,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingCanvas: {fileID: 5439605097798650613}
   loadingProgressImage: {fileID: 5439605097607587800}
-  isSceneLoading: 0
 --- !u!1 &5439605098427336499
 GameObject:
   m_ObjectHideFlags: 0

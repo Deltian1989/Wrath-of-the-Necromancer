@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 14
   itemName: Mana potion
+  stackSize: 8
   image: {fileID: 21300000, guid: 6592b916f86b19e428db6f6847c7b6dd, type: 3}
   useSFX: {fileID: 8300000, guid: 3546f5ed7faf0b24a87b34165e6e87e9, type: 3}
-  stackSize: 8

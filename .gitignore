@@ -62,3 +62,8 @@ crashlytics-build.properties
 .plastic
 ignore.conf
 
+# Odin inspector
+/Assets/Plugins/Sirenix/Demos/*
+/Assets/Plugins/Sirenix/Assemblies/AOT/*
+!/Assets/Plugins/Sirenix/Demos/*.unitypackage
+

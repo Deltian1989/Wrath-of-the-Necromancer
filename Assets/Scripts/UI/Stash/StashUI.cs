@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,6 +11,7 @@ namespace WotN.UI.Stash
     public class StashUI : MonoBehaviour
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Transform inventoryParent;
 
         [Header("Stash gold window")]
@@ -27,6 +29,7 @@ namespace WotN.UI.Stash
         private GameObject withdrawGoldWindow;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text stashedGoldText;
 
         [SerializeField]
@@ -34,6 +37,7 @@ namespace WotN.UI.Stash
 
         [Header("Other")]
         [SerializeField]
+        [AssetsOnly]
         private AudioClip goldClip;
 
         private ItemSlot[] itemSlots;

@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System;
 using UnityEngine;
 using UnityEngine.AI;
@@ -11,6 +12,7 @@ namespace WotN.ScriptableObjects.World
 
         public Vector3 position;
 
+        [AssetsOnly]
         public GameObject areaPrefab;
     }
 }

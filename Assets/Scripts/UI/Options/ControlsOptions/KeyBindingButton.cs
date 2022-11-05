@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,15 +9,19 @@ namespace WotN.UI.Options.Controls
     public class KeyBindingButton : MonoBehaviour
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private TMP_Text keyBindingText;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject keyBindingNoneText;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private GameObject pressKeyText;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Button button;
 
         [SerializeField]

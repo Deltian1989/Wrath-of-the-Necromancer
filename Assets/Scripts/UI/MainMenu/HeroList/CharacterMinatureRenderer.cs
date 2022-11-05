@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using WotN.Common.Managers;
 using WotN.Common.Utils.GamePersistance;
@@ -7,12 +8,15 @@ namespace WotN.UI.MainMenu.HeroList
     public class CharacterMinatureRenderer : MonoBehaviour
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Camera renderingCamera;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Transform renderedCharacterSpot;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private CharacterMinatureAppearance renderedCharacterMinature;
 
         public void RenderCharacter(RenderTexture renderTexture, PersistedCharacterData characterData, CharacterMinatureAppearance characterMinatureModel)

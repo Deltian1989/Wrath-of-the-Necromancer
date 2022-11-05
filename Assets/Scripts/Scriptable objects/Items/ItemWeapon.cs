@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace WotN.ScriptableObjects.Items
@@ -18,6 +19,7 @@ namespace WotN.ScriptableObjects.Items
 
         public int maxDamage;
 
+        [EnumToggleButtons]
         public AttackSpeed attackSpeed;
 
         public int magicDamage;

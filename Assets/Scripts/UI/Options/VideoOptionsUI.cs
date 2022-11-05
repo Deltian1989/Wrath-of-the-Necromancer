@@ -3,30 +3,38 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 using WotN.Common.Managers;
+using Sirenix.OdinInspector;
 
 namespace WotN.UI.Options
 {
     public class VideoOptionsUI : MonoBehaviour
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private TMPro.TMP_Text currentScreenResolutionText;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private TMPro.TMP_Text currentGraphicsTierText;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Slider screenResolutionSlider;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Slider graphicsTierSlider;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Slider fullScreenSlider;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Button saveButton;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Button resetButton;
 
         private bool enableSaveButtonForScreenResolutionSlider = false;

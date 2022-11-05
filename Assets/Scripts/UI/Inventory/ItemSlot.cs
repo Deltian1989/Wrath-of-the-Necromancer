@@ -4,21 +4,26 @@ using WotN.Common.Managers;
 using UnityEngine.InputSystem;
 using WotN.UI.Tooltips.TooltipUIElements;
 using static WotN.UI.Utils.ItemHelper;
+using Sirenix.OdinInspector;
 
 namespace WotN.UI.Inventory
 {
     public class ItemSlot : MonoBehaviour
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Image itemIcon;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Image countFrame;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Text itemCount;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Button itemButton;
 
         [SerializeField]

@@ -19,6 +19,7 @@ using WotN.ScriptableObjects.World;
 using UnityEngine.AI;
 using WotN.Interactables;
 using WotN.Common.Utils.GamePersistence;
+using Sirenix.OdinInspector;
 
 namespace WotN.Common.Managers
 {
@@ -37,6 +38,7 @@ namespace WotN.Common.Managers
         public bool isInGame;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Canvas mainGameCanvas;
 
         [SerializeField]
@@ -333,8 +335,8 @@ namespace WotN.Common.Managers
                 dexterity = selectedHeroClass.dexterity,
                 energy = selectedHeroClass.energy,
                 playerGold = selectedHeroClass.startGold,
-                itemsInInventory = selectedHeroClass.inventoryItemsAtStart.Select(i => new SavedInventoryItemData { itemId = i.item.ID, count = i.count }).ToList(),
-                equippedItems = selectedHeroClass.equippedItemsAtStart
+                itemsInInventory = selectedHeroClass.initialInventoryItems.Select(i => new SavedInventoryItemData { itemId = i.item.ID, count = i.count }).ToList(),
+                equippedItems = selectedHeroClass.initialEquippedItems
                 .Select(item => item != null ? new SavedEquippmentItemData { itemId = item.ID, itemType = item is ItemWeapon ? (((ItemWeapon)item).isTwoHandedWeapon ? 3 : 1) : item is ItemShield ? 2 : 0, objectName = item.itemName } : null)
                 .ToArray(),
                 itemsInStash=new List<SavedInventoryItemData>(),

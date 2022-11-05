@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -7,12 +8,15 @@ namespace WotN.UI.Options.Controls
     public class KeyBindingEntry : MonoBehaviour
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private TMP_Text functionName;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private KeyBindingButton keyBindingButton;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private KeyBindingButton altKeyBindingButton;
 
         private InputAction inputAction;

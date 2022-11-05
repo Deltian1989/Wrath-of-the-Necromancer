@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 using WotN.Common.Managers;
@@ -7,27 +8,35 @@ namespace WotN.UI.Options
     public class AudioOptionsUI : MonoBehaviour
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Slider masterVolumeSlider;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Slider SFXVolumeSlider;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Slider UIVolumeSlider;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Slider NPCSpeechVolumeSlider;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Slider ambientVolumeSlider;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Slider musicVolumeSlider;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Button saveButton;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private Button resetButton;
 
         void Start()

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Sirenix.OdinInspector;
+using UnityEngine;
 using WotN.Interactables;
 using WotN.Minimap;
 
@@ -13,12 +14,15 @@ namespace WotN.Common.Managers
         private const string minimapItemsAreaTag = "MinimapItemsArea";
 
         [SerializeField]
+        [AssetsOnly]
         private MinimapItem playerMinimapItemPrefab;
 
         [SerializeField]
+        [AssetsOnly]
         private MinimapItemWithCaption npcMinimapItemPrefab;
 
         [SerializeField]
+        [AssetsOnly]
         private MinimapItem stashMinimapItemPrefab;
 
         private MinimapCamera minimapCamera;

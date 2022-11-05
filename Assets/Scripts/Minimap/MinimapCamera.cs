@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace WotN.Minimap
@@ -8,6 +9,7 @@ namespace WotN.Minimap
         private float movementsSmoothing = 6;
 
         [SerializeField]
+        [SceneObjectsOnly]
         private GameObject _player;
 
         private Camera camera;

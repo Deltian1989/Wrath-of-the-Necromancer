@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System;
 using System.Collections.Generic;
 using UnityEditor;
@@ -19,6 +20,7 @@ namespace WotN.Minimap
         private ScanArea lastScanArea = ScanArea.Units2;
 
         [SerializeField]
+        [SceneObjectsOnly]
         private Transform minimapScanHolder;
 
         [HideInInspector]

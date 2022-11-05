@@ -5,13 +5,14 @@ using UnityEngine;
 
 namespace WotN.Common.Utils.GamePersistance
 {
-    public class GamePersistenceUtils : MonoBehaviour
+    public static class GamePersistenceUtils
     {
         private const string supportedFileExtension = ".wotn";
 
         public static void SaveGame(PersistedCharacterData characterData)
         {
             BinaryFormatter bf = new BinaryFormatter();
+
             FileStream file = File.Create(Application.persistentDataPath
                          + $"/{characterData.heroName}.wotn");
 

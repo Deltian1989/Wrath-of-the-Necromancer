@@ -4,15 +4,18 @@ using TMPro;
 using UnityEngine;
 using static WotN.ScriptableObjects.Items.ItemWeapon;
 using UnityEngine.UI;
+using Sirenix.OdinInspector;
 
 namespace WotN.UI.Tooltips.TooltipWindows
 {
     public class ItemTooltip : TooltipBase
     {
         [SerializeField]
+        [ChildGameObjectsOnly]
         private TMP_Text itemDescription;
 
         [SerializeField]
+        [ChildGameObjectsOnly]
         private TMP_Text itemShortcutTip;
 
         [SerializeField]

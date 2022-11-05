@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System.Linq;
 using UnityEngine;
 using WotN.ScriptableObjects.Items;
@@ -13,41 +14,29 @@ namespace WotN.Common.Managers
     {
         public static TooltipManager Instance { get; private set; }
 
-        [Header("Tooltip SOs")]
+        [BoxGroup("Tooltip SOs")]
         [SerializeField]
         private InfoTooltip[] tooltips;
 
+        [BoxGroup("Tooltip SOs")]
         [SerializeField]
         private ShortcutKeyTip[] shortcutKeyTips;
 
-        [Header("Tooltip UI")]
+        [BoxGroup("Tooltip UI")]
         [SerializeField]
         private Transform tooltipArea;
 
+        [BoxGroup("Tooltip UI")]
         [SerializeField]
         private ItemTooltip itemTooltip;
 
+        [BoxGroup("Tooltip UI")]
         [SerializeField]
         private GenericTooltip genericTooltip;
 
+        [BoxGroup("Tooltip UI")]
         [SerializeField]
         private ExtendedGenericTooltip extendedGenericTooltip;
-
-        [Header("Settings for shortcut key tips")]
-        [SerializeField]
-        private int[] stashShortcutKeyIds;
-
-        [SerializeField]
-        private int[] inventoryShortcutKeyIds;
-
-        [SerializeField]
-        private int[] inventoryToStashShortcutKeyIds;
-
-        [SerializeField]
-        private int[] equipmentShortcutKeyIds;
-
-        [SerializeField]
-        private int[] equipmentToStashShortcutKeyIds;
 
 
         void Awake()
